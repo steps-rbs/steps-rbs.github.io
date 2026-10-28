@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STEPS · Scene-Grounded Task Escalation through Progressive Skill Learning</title>
+  <meta name="description" content="STEPS evaluates robot self-improvement on human goals: goal-grounded task scenes, an L5-centered task hierarchy, and a develop-then-freeze protocol that separates capability from fitting.">
+  <meta property="og:title" content="STEPS: Scene-Grounded Task Escalation through Progressive Skill Learning toward Open-Ended Goals">
+  <meta property="og:image" content="media/hero/steps_loop.jpg">
+  <link rel="stylesheet" href="static/css/site.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <header class="nav" id="nav">
+    <div class="wrap-wide">
+      <a class="wordmark" href="#top" aria-label="STEPS home"><span class="steps-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>STEPS</a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#film">Overview</a><a href="#method">Method</a><a href="#scenes">Scenes</a><a href="#gallery">Task Gallery</a>
+        <a href="#skills">Skill Library</a><a href="#benchmarks">Benchmarks</a><a href="#limitations">Limitations</a>
+        <a class="cta" href="#paper">Paper</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero: full-bleed path-traced loop -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-media">
+        <video id="hero-video" autoplay muted loop playsinline preload="auto" poster="media/hero/steps_loop.jpg" aria-hidden="true">
+          <source src="media/hero/steps_loop.mp4" type="video/mp4">
+        </video>
+      </div>
+      <span class="hero-credit">Path-traced replays of evaluated trials · Nyx renderer</span>
+      <div class="wrap hero-content">
+        <p class="eyebrow">ICLR 2027 submission · Anonymous authors</p>
+        <h1 id="hero-title">STEP<span>S</span></h1>
+        <p class="hero-title" data-n="title" data-f="title"></p>
+        <p class="hero-lede">Did the robot learn a capability, or did it learn the scene it practiced? STEPS turns a human goal into task scenes, derives held-out tests from that goal, and freezes the agent before measuring what transfers.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#film"><span class="play" aria-hidden="true"></span>Watch the overview</a>
+          <a class="btn ghost" href="#gallery">Browse 105 tasks</a>
+          <a class="btn ghost" href="#benchmarks">See the benchmarks</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong data-n="prose.benchmark.goals.value"></strong><span>human goals</span></div>
+          <div><strong data-n="prose.benchmark.tasks.value"></strong><span>task specifications</span></div>
+          <div><strong data-n="table2_bench.total.STEPS.overall" data-f="den"></strong><span>trials · main batch</span></div>
+          <div><strong>L1–L5</strong><span>diagnostic hierarchy</span></div>
+        </div>
+      </div>
+      <a class="hero-scroll" href="#film">Scroll</a>
+    </section>
+
+    <!-- Overview film + TL;DR -->
+    <section class="section film dark" id="film" aria-labelledby="film-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Overview</p><h2 id="film-title">From a human goal to a frozen capability test.</h2></div>
+          <p>Every robot shot is a path-traced replay of a recorded trial; every number on screen is taken from the paper.</p>
+        </div>
+        <div class="film-frame reveal">
+          <video id="film-video" controls playsinline preload="metadata" poster="media/film/steps_film.jpg">
+            <source src="media/film/steps_film.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="film-caption"><span>STEPS overview film · 1080p</span><span>Replays re-execute saved programs; simulator physics is unchanged, only the camera is chosen for presentation.</span></div>
+        <div class="tldr">
+          <div class="reveal">
+            <p class="big">Code-as-Policy agents improve through practice. But a high score on a practiced task cannot tell us whether the agent gained a <strong>reusable capability</strong> or adapted to the instance it practiced.</p>
+            <p>STEPS makes the human goal the unit of evaluation. It generates physically valid, oracle-solvable task scenes from the goal, compiles the full goal into an L5 task, and derives held-out L1–L4 tasks from the same objects and relations. The agent develops its skill library on the goal; then the library is frozen and tested on the practiced task, on regenerated instances, and on the held-out tasks.</p>
+          </div>
+          <aside class="keyfacts reveal" aria-label="Key results">
+            <div><strong data-n="table2_bench.total.STEPS.L5" data-f="frac"></strong><span>practiced L5 trials solved by the frozen library</span></div>
+            <div><strong><span data-n="prose.q2.perturbation.pct.medium"></span>%</strong><span>L5 success after medium pose perturbation (<span data-n="prose.q2.perturbation.ranges.medium"></span>)</span></div>
+            <div><strong data-n="table2_bench.total.STEPS.L4" data-f="pct1"></strong><span>held-out L4 constraint probes solved</span></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Method -->
+    <section class="section method" id="method" aria-labelledby="method-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Framework</p><h2 id="method-title">One goal, a ladder of held-out tests.</h2></div>
+          <p>STEPS compiles the full goal from verified relation templates and derives held-out probes from the same objects and relations. The hierarchy is a measurement axis, not a curriculum.</p>
+        </div>
+        <div class="flow reveal">
+          <article><div class="step">01 / GROUND</div><h3>Generate the task scene</h3><p>A language model plans supports and the goal objects bound to them; floor assets follow zones and wall runs, and graph-edit correction fixes only the objects a VLM flags. Layered checks and a privileged oracle accept the scene.</p></article>
+          <article><div class="step">02 / DERIVE</div><h3>Compile L5, derive L1–L4</h3><p>Goal relations from verified templates define the L5 success condition. L1–L4 tasks start from the L5 poses and are labeled goal subtask, component probe, or constraint probe.</p></article>
+          <article><div class="step">03 / FREEZE</div><h3>Develop, then freeze</h3><p>The agent develops its skill library on L5 without restriction. The frozen agent is then evaluated on L5, regenerated instances, and the held-out L1–L4 tasks.</p></article>
+        </div>
+        <div class="ladder reveal" aria-label="Task levels L1 to L5">
+          <div class="rung"><b>L1</b><div><small>Action</small><p>Lift or push one goal object.</p></div></div>
+          <div class="rung"><b>L2</b><div><small>Relation</small><p>Satisfy one object's relation in a reduced scene.</p></div></div>
+          <div class="rung"><b>L3</b><div><small>Composition</small><p>Satisfy several relations in a reduced scene.</p></div></div>
+          <div class="rung"><b>L4</b><div><small>Preservation</small><p>Combine groups in the full scene; keep others in place.</p></div></div>
+          <div class="rung"><b>L5</b><div><small>Full goal</small><p>Complete the human-specified goal.</p></div></div>
+        </div>
+        <p class="ladder-note">Every derived task starts from its L5 object poses, so a failure cannot be blamed on a harder layout.</p>
+        <div class="types reveal">
+          <article style="border-color:#4ec488"><strong data-n="prose.benchmark.task_types.value.goal_subtask"></strong><h3>Goal subtasks</h3><p>Relations that every successful L5 solution also satisfies.</p></article>
+          <article style="border-color:#5ca5f0"><strong data-n="prose.benchmark.task_types.value.component_probe"></strong><h3>Component probes</h3><p>Capabilities that L5 solutions exercise but L5 success does not reveal.</p></article>
+          <article style="border-color:#f09e48"><strong data-n="prose.benchmark.task_types.value.constraint_probe"></strong><h3>Constraint probes</h3><p>Extra preservation or geometry requirements the goal does not impose.</p></article>
+        </div>
+        <figure class="figure reveal"><a href="media/paper-pipeline.jpg" target="_blank" rel="noopener"><img src="media/paper-pipeline.jpg" alt="STEPS pipeline on the office goal: task-scene grounding, L5-centered tasks, self-improvement, capability evaluation" loading="lazy"></a>
+          <figcaption>Overview of STEPS on the office goal (paper Fig. 2). The library is developed on L5 only, then frozen before the capability tests.</figcaption></figure>
+        <div class="compare-wrap reveal"><table class="compare" id="compare-table" aria-label="Capabilities for goal-driven self-improvement (paper Table 1)"></table></div>
+      </div>
+    </section>
+
+    <!-- Scenes -->
+    <section class="section scenes" id="scenes" aria-labelledby="scenes-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Human-directed task scenes</p><h2 id="scenes-title">A goal becomes a scene the robot can act in.</h2></div>
+          <p>Compared with Holodeck, SceneWeaver and SAGE on the same clean-up instructions (<span data-n="prose.scene_gen.scenes_per_cell.value"></span> scenes per method and room), STEPS is the only method without colliding objects in all three room types.</p>
+        </div>
+        <div class="scene-grid">
+          <div class="metric-card reveal">
+            <div class="chart-top"><div class="tabs" id="sg-tabs" role="tablist" aria-label="Room type"></div><span class="note" style="margin:0">mean ± s.d. over 10 scenes</span></div>
+            <div class="sg-scroll"><table class="sg-table" id="sg-table"></table></div>
+            <p class="note">Visual scores (1–10) by a separate evaluator model; Coll. = % of object meshes in collision (lower is better); Stab. = % of objects stable after 120 simulation steps.</p>
+          </div>
+          <div class="reveal">
+            <div class="metric-card">
+              <p class="eyebrow">Layered validation</p>
+              <div class="checks">
+                <div class="check"><i>01</i><p><b>Asset settling.</b> Each movable asset is dropped from 2 mm and must settle within 15° and 5 cm.</p></div>
+                <div class="check"><i>02</i><p><b>Scene at rest.</b> After 2 s no object moves more than 5 cm or tilts more than 10°, and nothing interpenetrates by more than 5 mm.</p></div>
+                <div class="check"><i>03</i><p><b>Oracle solvability.</b> A privileged oracle must solve the task in at least two of three seeds from non-trivial initial states.</p></div>
+                <div class="check"><i>04</i><p><b>Regeneration.</b> The accepted scene is frozen and regenerated under controlled pose perturbations.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <figure class="figure reveal"><a href="media/paper-scene-compare.jpg" target="_blank" rel="noopener"><img src="media/paper-scene-compare.jpg" alt="Scenes generated from the same instruction by Holodeck, SceneWeaver, SAGE and STEPS" loading="lazy"></a>
+          <figcaption>Scenes generated from the same instruction, one per method and room type (paper Fig. 3).</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Task gallery -->
+    <section class="section gallery dark" id="gallery" aria-labelledby="gallery-title">
+      <div class="wrap-wide">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Task Gallery</p><h2 id="gallery-title"><span data-n="prose.benchmark.tasks.value"></span> tasks generated from five human goals.</h2></div>
+          <p>Each card is one task specification: its path-traced start state, level, task type, and the frozen library's success over five main-batch trials. Cards marked ▶ also have a path-traced replay of an evolution-route trial on the same task; hover to play, click for details.</p>
+        </div>
+        <div class="rooms" id="room-cards" role="tablist" aria-label="Filter by room"></div>
+        <div class="toolbar" id="gallery-toolbar">
+          <div class="filter-group" id="f-level"><span class="filter-label">Level</span></div>
+          <div class="filter-group" id="f-type"><span class="filter-label">Type</span></div>
+          <div class="filter-group" id="f-outcome"><span class="filter-label">Main batch</span></div>
+          <label class="search"><span class="sr-only">Search tasks</span><input id="gallery-search" type="search" placeholder="Search objects or instructions" autocomplete="off"></label>
+        </div>
+        <div class="gallery-meta"><span id="gallery-count" aria-live="polite"></span>
+          <div class="pager"><button id="pg-prev" type="button">← Prev</button><span id="pg-label"></span><button id="pg-next" type="button">Next →</button></div></div>
+        <div class="task-grid" id="task-grid"></div>
+        <p class="gallery-note">Success counts are the main 525-trial batch as reported in Table 2 (Dining L4/L5 after the controller-state fix). Replays are saved-program replays of the evolution-route trials shown in the appendix, rendered with a fixed tabletop camera.</p>
+      </div>
+    </section>
+
+    <!-- Skill library -->
+    <section class="section skills dark" id="skills" aria-labelledby="skills-title">
+      <div class="wrap-wide">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Skill Library</p><h2 id="skills-title">The frozen external skill library.</h2></div>
+          <p>Five executable bundles developed with human assistance in the five task scenes, frozen by SHA-256 before evaluation; eight geometry cards that carry their geometric knowledge to RoboSuite and LIBERO over six primitives; and the skills one evolution route distilled from L1–L4 practice.</p>
+        </div>
+        <div class="skill-stats reveal" id="skill-stats"></div>
+        <div class="skill-flow reveal" aria-label="How skills move from scenes to benchmarks">
+          <div class="flow-node"><b>Task scenes</b><span>Five goals, developed on the full L5 task with human assistance.</span></div>
+          <div class="flow-arrow">freeze</div>
+          <div class="flow-node"><b>Executable bundles</b><span>Callable Python over the scene API; object-bound, hash-pinned.</span></div>
+          <div class="flow-arrow">abstract</div>
+          <div class="flow-node"><b>Geometry cards</b><span>Bindings removed; injected verbatim into RoboSuite and LIBERO prompts.</span></div>
+        </div>
+        <div class="skill-controls">
+          <div class="tabs" id="skill-tabs" role="tablist" aria-label="Skill collections"></div>
+          <label class="search"><span class="sr-only">Filter skills</span><input id="skill-search" type="search" placeholder="Filter skills" autocomplete="off"></label>
+        </div>
+        <div class="atlas">
+          <div class="skill-list" id="skill-list" role="listbox" aria-label="Skills"></div>
+          <article class="reader" id="skill-reader" aria-live="polite"></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benchmarks -->
+    <section class="section bench" id="benchmarks" aria-labelledby="bench-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Benchmarks</p><h2 id="bench-title">High practice scores, measured gaps, real transfer.</h2></div>
+          <p>Results on the STEPS benchmark, under pose perturbation, along one evolution route, and on two external benchmarks. Protocols differ across benchmarks; denominators are reported within each and never pooled.</p>
+        </div>
+
+        <div class="bench-block reveal" id="b-steps">
+          <div class="bb-head"><div><p class="eyebrow">STEPS benchmark · 525 trials</p><h3>The library saturates L5, but held-out levels fall away.</h3></div>
+            <p>Frozen library (STEPS) against ASPIRE and CaP-Agent0 on all 105 tasks, five trials each. L5 reaches <b data-n="table2_bench.total.STEPS.L5" data-f="frac"></b> while L3 goal compositions and L4 constraint probes drop to <b data-n="table2_bench.total.STEPS.L3" data-f="pct1"></b> and <b data-n="table2_bench.total.STEPS.L4" data-f="pct1"></b>.</p></div>
+          <div class="chart-card">
+            <div class="chart-top"><div class="tabs" id="t2-tabs" role="tablist" aria-label="Room"></div>
+              <div class="legend" id="t2-legend"></div><button class="table-toggle" data-table="t2-table" type="button">Table view</button></div>
+            <svg class="chart" id="t2-chart" role="img" aria-label="Success rate by level"></svg>
+            <table class="data-table" id="t2-table"></table>
+          </div>
+        </div>
+
+        <div class="bench-block reveal" id="b-generalize">
+          <div class="bb-head"><div><p class="eyebrow">Q1 + Q2 · Regenerated instances</p><h3>The L5 score does not survive modest pose changes.</h3></div>
+            <p>After freezing the library, movable objects are perturbed and invalid or already-solved instances rejected. Under a fixed runtime, L3 goal subtasks reach <b data-n="prose.q2.fixed_l3.value" data-f="frac"></b> against <b data-n="prose.q1.l5_reruns.value" data-f="frac"></b> at L5, and restating the full goal in the task template gives <b data-n="prose.q2.restated_goal.value" data-f="frac"></b>.</p></div>
+          <div class="split-2">
+            <div class="chart-card"><div class="chart-top"><b style="font-size:.9rem">L5 success, frozen agent</b><span class="note" style="margin:0">bars: successes / trials · whiskers: 95% Wilson</span></div>
+              <svg class="chart" id="pert-chart" role="img" aria-label="L5 success under perturbation"></svg></div>
+            <div class="chart-card"><div class="chart-top"><b style="font-size:.9rem">Fixed runtime: L5 vs. its L3 goal subtasks</b></div>
+              <table class="data-table show" id="a1-table"></table>
+              <p class="note">L5 pools two reruns of the five L5 tasks (20 trials per room each); each L3 task has 7 trials. Living room excludes two coordinate probes.</p></div>
+          </div>
+        </div>
+
+        <div class="bench-block reveal" id="b-stage">
+          <div class="bb-head"><div><p class="eyebrow">Q3 · Stage records</p><h3>Distilled skills pass validation, but are rarely executed at the goal.</h3></div>
+            <p>On one evolution route, skills distilled from L1–L4 practice are traced from proposal to execution. Of <b data-n="prose.q3.stage_records.value.offered" data-f="den"></b> L5 trials where they were offered, they were executed unmodified in <b data-n="prose.q3.stage_records.value.executed" data-f="num"></b>; the route's L5 success was <b data-n="prose.q3.stage_records.value.l5_success" data-f="frac"></b>.</p></div>
+          <div class="chart-card"><div class="funnel" id="funnel"></div></div>
+        </div>
+
+        <div class="bench-block reveal" id="b-robosuite">
+          <div class="bb-head"><div><p class="eyebrow">RoboSuite · beyond the source scenes</p><h3>Frozen cards transfer; stage records target the next update.</h3></div>
+            <p>A Code-as-Policy agent with the frozen geometry cards, one program per task run on 50 initial states, compared with RATs. Outlined extensions show the targeted capability update.</p></div>
+          <div class="stat-row">
+            <div class="stat"><div class="label">Seven RATs tasks</div><div class="value"><span data-n="prose.q3.rats7.value.STEPS" data-f="num"></span><small> / <span data-n="prose.q3.rats7.value.STEPS" data-f="den"></span></small></div><div class="delta">vs. RATs <span data-n="prose.q3.rats7.value.RATs" data-f="frac"></span></div></div>
+            <div class="stat"><div class="label">Six Pick-and-Place tasks</div><div class="value"><span data-n="prose.q3.pickplace6.value.STEPS" data-f="num"></span><small> / <span data-n="prose.q3.pickplace6.value.STEPS" data-f="den"></span></small></div><div class="delta">vs. RATs <span data-n="prose.q3.pickplace6.value.RATs" data-f="frac"></span></div></div>
+            <div class="stat"><div class="label">After targeted updates (Pick-and-Place)</div><div class="value"><span data-n="prose.q4.pickplace.value.after" data-f="num"></span><small> / <span data-n="prose.q4.pickplace.value.after" data-f="den"></span></small></div><div class="delta">up from <span data-n="prose.q4.pickplace.value.before" data-f="frac"></span> · PickPlaceCan <b><span data-n="prose.q4.can.value.before" data-f="num"></span>→<span data-n="prose.q4.can.value.after" data-f="num"></span></b> / 50</div></div>
+          </div>
+          <div class="chart-card" style="margin-top:16px">
+            <div class="chart-top"><div class="legend" id="t3-legend"></div><button class="table-toggle" data-table="t3-table" type="button">Table view</button></div>
+            <svg class="chart" id="t3-chart" role="img" aria-label="RoboSuite success per task"></svg>
+            <table class="data-table" id="t3-table"></table>
+          </div>
+          <div class="chart-top" style="margin-top:26px"><b>Recorded trials</b><div class="filters-inline" id="clip-filter"></div></div>
+          <div class="clip-strip" id="robosuite-clips"></div>
+          <p class="note">Clips come from the frozen-card batches whose totals are reported in the table (one recorded trial each; videos are time-compressed by the recorder). Spill wiping plays at 4×.</p>
+          <div class="bb-head" style="margin-top:40px"><div><p class="eyebrow">Q4 · Same initial state</p><h3>A capability update recovers a failed execution.</h3></div>
+            <p>Weak predicates found by the stage records became <b data-n="prose.q4.derived_probes.value.valid" data-f="raw"></b> valid derived long-horizon probes, of which the frozen library solved <b data-n="prose.q4.derived_probes.value.solved" data-f="raw"></b>. Repairs learned from those failures then transfer to RoboSuite without further adaptation.</p></div>
+          <div class="recovery" id="recovery"></div>
+        </div>
+
+        <div class="bench-block reveal" id="b-libero">
+          <div class="bb-head"><div><p class="eyebrow">LIBERO-PRO</p><h3>Framework adaptation across object, goal and spatial suites.</h3></div>
+            <p>Success under initial-position (Pos.) and task (Task) perturbation. In a matched pilot on two RoboSuite and two LIBERO tasks, adding the cards raises success from <b data-n="prose.q3.matched_pilot.value.without_cards" data-f="frac"></b> to <b data-n="prose.q3.matched_pilot.value.with_cards" data-f="frac"></b>.</p></div>
+          <div class="chart-card">
+            <div class="chart-top"><div class="legend" id="t4-legend"></div><button class="table-toggle" data-table="t4-table" type="button">Table view</button></div>
+            <svg class="chart" id="t4-chart" role="img" aria-label="LIBERO-PRO success by split"></svg>
+            <table class="data-table" id="t4-table"></table>
+          </div>
+          <div class="libero-strip" id="libero-clips"></div>
+          <p class="note">LIBERO-PRO clips are saved-action replays on development seeds from an earlier skill revision (the burned-in banner says so); they illustrate the tasks, not the reported numbers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Limitations -->
+    <section class="section limits" id="limitations" aria-labelledby="lim-title">
+      <div class="wrap"><p class="eyebrow">Interpretation</p><h2 id="lim-title">Measure the gap before claiming improvement.</h2>
+        <div class="limits-grid">
+          <article><h3>Diagnosis, not a solution</h3><p>STEPS diagnoses self-improvement but does not solve it: no tested evolution route yet reliably improves goal-level performance.</p></article>
+          <article><h3>Human-assisted development</h3><p>The strongest source library was developed with human assistance; it is evidence of execution reuse, not of autonomous skill discovery.</p></article>
+          <article><h3>Protocols are not interchangeable</h3><p>Five-room, RoboSuite and LIBERO-PRO trials use different models, interfaces, budgets and predicates, so their denominators are reported within each protocol.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section abstract" id="paper" aria-labelledby="abs-title">
+      <div class="wrap"><p class="eyebrow">Abstract</p><h2 id="abs-title">Evaluating self-improvement on human goals.</h2>
+        <blockquote data-n="abstract" data-f="raw"></blockquote>
+        <pre class="bibtex" id="bibtex"><button class="mini-btn" id="bibtex-copy" type="button">Copy</button>@inproceedings{steps2027,
+  title     = {STEPS: Scene-Grounded Task Escalation through Progressive Skill Learning toward Open-Ended Goals},
+  author    = {Anonymous},
+  booktitle = {Submitted to the International Conference on Learning Representations (ICLR)},
+  year      = {2026},
+  note      = {Under double-blind review}
+}</pre>
+        <div class="resource-list">
+          <a href="data/tasks.json" download><span>TASK DATA</span><strong>105 task specifications (JSON) ↓</strong></a>
+          <a href="#gallery"><span>EXPLORE</span><strong>Task gallery ↑</strong></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap"><span>STEPS · Goal-derived diagnostics for robot self-improvement</span><a href="#top">Back to top ↑</a></div></footer>
+
+  <div class="modal" id="task-modal" role="dialog" aria-modal="true" aria-labelledby="m-title">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-window">
+      <button class="modal-close" type="button" data-close aria-label="Close">✕</button>
+      <div class="modal-media" id="m-media"></div>
+      <div class="modal-side" id="m-side"></div>
+    </div>
+  </div>
+  <div class="tip" id="tip" role="tooltip"></div>
+
+  <script src="data/site_data.js"></script>
+  <script src="static/js/main.js"></script>
+  <script src="static/js/syntax.js"></script>
+  <script src="static/js/gallery.js"></script>
+  <script src="static/js/skills.js"></script>
+  <script src="static/js/charts.js"></script>
+</body>
+</html>

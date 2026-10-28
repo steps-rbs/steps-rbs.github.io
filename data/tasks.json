@@ -1,0 +1,4826 @@
+{
+ "source": "STEPS main batch (Table 2); per-task outcomes of the frozen library, five trials each",
+ "tasks": [
+  {
+   "id": "office-L1_01",
+   "room": "office",
+   "slot": "L1_01",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift stapler ≥ 6 cm",
+   "instruction": "Grasp stapler_0 and hold it at least 0.06 m above its center height in the first observation after reset.",
+   "objects": [
+    "stapler_0"
+   ],
+   "members": [
+    "stapler_0"
+   ],
+   "keep": [],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l1_5470b479e8ef__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 601011,
+     "success": true
+    },
+    {
+     "seed": 601012,
+     "success": true
+    },
+    {
+     "seed": 601013,
+     "success": true
+    },
+    {
+     "seed": 601014,
+     "success": true
+    },
+    {
+     "seed": 601015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L1_02",
+   "room": "office",
+   "slot": "L1_02",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift stapler ≥ 12 cm",
+   "instruction": "Grasp stapler_0 and hold it at least 0.12 m above its center height in the first observation after reset.",
+   "objects": [
+    "stapler_0"
+   ],
+   "members": [
+    "stapler_0"
+   ],
+   "keep": [],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l1_45177e6387b8__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 601021,
+     "success": true
+    },
+    {
+     "seed": 601022,
+     "success": true
+    },
+    {
+     "seed": 601023,
+     "success": true
+    },
+    {
+     "seed": 601024,
+     "success": true
+    },
+    {
+     "seed": 601025,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L1_03",
+   "room": "office",
+   "slot": "L1_03",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift clamp ≥ 6 cm",
+   "instruction": "Grasp clamp_2 and hold it at least 0.06 m above its center height in the first observation after reset.",
+   "objects": [
+    "clamp_2"
+   ],
+   "members": [
+    "clamp_2"
+   ],
+   "keep": [],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l1_80e6addc778c__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 601031,
+     "success": true
+    },
+    {
+     "seed": 601032,
+     "success": true
+    },
+    {
+     "seed": 601033,
+     "success": true
+    },
+    {
+     "seed": 601034,
+     "success": true
+    },
+    {
+     "seed": 601035,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L1_04",
+   "room": "office",
+   "slot": "L1_04",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift ink cartridge ≥ 6 cm",
+   "instruction": "Grasp ink_cartridge_3 and hold it at least 0.06 m above its center height in the first observation after reset.",
+   "objects": [
+    "ink_cartridge_3"
+   ],
+   "members": [
+    "ink_cartridge_3"
+   ],
+   "keep": [],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l1_ae1688878c64__v2",
+   "successes": 4,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 601041,
+     "success": false
+    },
+    {
+     "seed": 601042,
+     "success": true
+    },
+    {
+     "seed": 601043,
+     "success": true
+    },
+    {
+     "seed": 601044,
+     "success": true
+    },
+    {
+     "seed": 601045,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L1_05",
+   "room": "office",
+   "slot": "L1_05",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift ink cartridge ≥ 12 cm",
+   "instruction": "Grasp ink_cartridge_3 and hold it at least 0.12 m above its center height in the first observation after reset.",
+   "objects": [
+    "ink_cartridge_3"
+   ],
+   "members": [
+    "ink_cartridge_3"
+   ],
+   "keep": [],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l1_cdf8bf6531cc__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 601051,
+     "success": true
+    },
+    {
+     "seed": 601052,
+     "success": true
+    },
+    {
+     "seed": 601053,
+     "success": true
+    },
+    {
+     "seed": 601054,
+     "success": true
+    },
+    {
+     "seed": 601055,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L2_01",
+   "room": "office",
+   "slot": "L2_01",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Stapler into tray A",
+   "instruction": "Place stapler_0 inside tray_a. Release all manipulated objects.",
+   "objects": [
+    "stapler_0",
+    "tray_a"
+   ],
+   "members": [
+    "stapler_0"
+   ],
+   "keep": [],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l2_cea4fc26cbf6__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 602011,
+     "success": true
+    },
+    {
+     "seed": 602012,
+     "success": true
+    },
+    {
+     "seed": 602013,
+     "success": true
+    },
+    {
+     "seed": 602014,
+     "success": true
+    },
+    {
+     "seed": 602015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L2_02",
+   "room": "office",
+   "slot": "L2_02",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Clamp into tray A",
+   "instruction": "Place clamp_2 inside tray_a. Release all manipulated objects.",
+   "objects": [
+    "clamp_2",
+    "tray_a"
+   ],
+   "members": [
+    "clamp_2"
+   ],
+   "keep": [],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l2_1dee959c6074__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 602021,
+     "success": true
+    },
+    {
+     "seed": 602022,
+     "success": true
+    },
+    {
+     "seed": 602023,
+     "success": true
+    },
+    {
+     "seed": 602024,
+     "success": true
+    },
+    {
+     "seed": 602025,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L2_03",
+   "room": "office",
+   "slot": "L2_03",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Clamp into tray A",
+   "instruction": "Place clamp_2 inside tray_a. Release all manipulated objects.",
+   "objects": [
+    "stapler_0",
+    "clamp_2",
+    "tray_a"
+   ],
+   "members": [
+    "clamp_2"
+   ],
+   "keep": [],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l2_e467a4811d7a__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 602031,
+     "success": true
+    },
+    {
+     "seed": 602032,
+     "success": true
+    },
+    {
+     "seed": 602033,
+     "success": true
+    },
+    {
+     "seed": 602034,
+     "success": true
+    },
+    {
+     "seed": 602035,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L2_04",
+   "room": "office",
+   "slot": "L2_04",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Ink cartridge next to pencil case",
+   "instruction": "Place ink_cartridge_3 next to pencilcase_1. Release all manipulated objects.",
+   "objects": [
+    "ink_cartridge_3",
+    "pencilcase_1"
+   ],
+   "members": [
+    "ink_cartridge_3"
+   ],
+   "keep": [],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l2_fa2c45e17187__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 602041,
+     "success": true
+    },
+    {
+     "seed": 602042,
+     "success": true
+    },
+    {
+     "seed": 602043,
+     "success": true
+    },
+    {
+     "seed": 602044,
+     "success": true
+    },
+    {
+     "seed": 602045,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L2_05",
+   "room": "office",
+   "slot": "L2_05",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Ink cartridge next to pencil case",
+   "instruction": "Place ink_cartridge_3 next to pencilcase_1. Release all manipulated objects.",
+   "objects": [
+    "clamp_2",
+    "ink_cartridge_3",
+    "pencilcase_1"
+   ],
+   "members": [
+    "ink_cartridge_3"
+   ],
+   "keep": [],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l2_c59b2149c86a__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 602051,
+     "success": true
+    },
+    {
+     "seed": 602052,
+     "success": true
+    },
+    {
+     "seed": 602053,
+     "success": true
+    },
+    {
+     "seed": 602054,
+     "success": true
+    },
+    {
+     "seed": 602055,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L3_01",
+   "room": "office",
+   "slot": "L3_01",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Stapler, clamp into tray A",
+   "instruction": "Place stapler_0, clamp_2 inside tray_a. Release all manipulated objects.",
+   "objects": [
+    "stapler_0",
+    "clamp_2",
+    "tray_a"
+   ],
+   "members": [
+    "clamp_2",
+    "stapler_0"
+   ],
+   "keep": [],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l3_ba3c1bd11e1e__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 603011,
+     "success": true
+    },
+    {
+     "seed": 603012,
+     "success": true
+    },
+    {
+     "seed": 603013,
+     "success": true
+    },
+    {
+     "seed": 603014,
+     "success": true
+    },
+    {
+     "seed": 603015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L3_02",
+   "room": "office",
+   "slot": "L3_02",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Stapler into tray A · ink cartridge next to pencil case",
+   "instruction": "Place stapler_0 inside tray_a. Place ink_cartridge_3 next to pencilcase_1. Release all manipulated objects.",
+   "objects": [
+    "stapler_0",
+    "ink_cartridge_3",
+    "pencilcase_1",
+    "tray_a"
+   ],
+   "members": [
+    "ink_cartridge_3",
+    "stapler_0"
+   ],
+   "keep": [],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l3_5e2586cee566__v2",
+   "successes": 1,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 603021,
+     "success": false
+    },
+    {
+     "seed": 603022,
+     "success": false
+    },
+    {
+     "seed": 603023,
+     "success": false
+    },
+    {
+     "seed": 603024,
+     "success": false
+    },
+    {
+     "seed": 603025,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L3_03",
+   "room": "office",
+   "slot": "L3_03",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Clamp into tray A · ink cartridge next to pencil case",
+   "instruction": "Place clamp_2 inside tray_a. Place ink_cartridge_3 next to pencilcase_1. Release all manipulated objects.",
+   "objects": [
+    "clamp_2",
+    "ink_cartridge_3",
+    "pencilcase_1",
+    "tray_a"
+   ],
+   "members": [
+    "clamp_2",
+    "ink_cartridge_3"
+   ],
+   "keep": [],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l3_16bbc2108933__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 603031,
+     "success": true
+    },
+    {
+     "seed": 603032,
+     "success": true
+    },
+    {
+     "seed": 603033,
+     "success": true
+    },
+    {
+     "seed": 603034,
+     "success": true
+    },
+    {
+     "seed": 603035,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L3_04",
+   "room": "office",
+   "slot": "L3_04",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Clamp into tray A · ink cartridge next to pencil case",
+   "instruction": "Place clamp_2 inside tray_a. Place ink_cartridge_3 next to pencilcase_1. Release all manipulated objects.",
+   "objects": [
+    "stapler_0",
+    "clamp_2",
+    "ink_cartridge_3",
+    "pencilcase_1",
+    "tray_a"
+   ],
+   "members": [
+    "clamp_2",
+    "ink_cartridge_3"
+   ],
+   "keep": [],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l3_9c623ab74220__v2",
+   "successes": 2,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 603041,
+     "success": false
+    },
+    {
+     "seed": 603042,
+     "success": false
+    },
+    {
+     "seed": 603043,
+     "success": false
+    },
+    {
+     "seed": 603044,
+     "success": true
+    },
+    {
+     "seed": 603045,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L3_05",
+   "room": "office",
+   "slot": "L3_05",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Stapler, clamp into tray A · ink cartridge next to pencil case",
+   "instruction": "Place stapler_0, clamp_2 inside tray_a. Place ink_cartridge_3 next to pencilcase_1. Release all manipulated objects.",
+   "objects": [
+    "stapler_0",
+    "clamp_2",
+    "ink_cartridge_3",
+    "pencilcase_1",
+    "tray_a"
+   ],
+   "members": [
+    "clamp_2",
+    "ink_cartridge_3",
+    "stapler_0"
+   ],
+   "keep": [],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l3_a62db42ca71b__v2",
+   "successes": 2,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 603051,
+     "success": false
+    },
+    {
+     "seed": 603052,
+     "success": false
+    },
+    {
+     "seed": 603053,
+     "success": true
+    },
+    {
+     "seed": 603054,
+     "success": false
+    },
+    {
+     "seed": 603055,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L4_01",
+   "room": "office",
+   "slot": "L4_01",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Stapler, clamp into tray A · ink cartridge next to pencil case · keep tray A in place",
+   "instruction": "Place stapler_0, clamp_2 inside tray_a. Place ink_cartridge_3 next to pencilcase_1. Release all manipulated objects. Keep tray_a within 5 cm of their initial XY positions.",
+   "objects": [
+    "stapler_0",
+    "clamp_2",
+    "ink_cartridge_3",
+    "pencilcase_1",
+    "tray_a",
+    "tray_b"
+   ],
+   "members": [
+    "clamp_2",
+    "ink_cartridge_3",
+    "stapler_0"
+   ],
+   "keep": [
+    "tray_a"
+   ],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l4_ac0fe132b5f4__v2",
+   "successes": 3,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 604011,
+     "success": true
+    },
+    {
+     "seed": 604012,
+     "success": true
+    },
+    {
+     "seed": 604013,
+     "success": false
+    },
+    {
+     "seed": 604014,
+     "success": false
+    },
+    {
+     "seed": 604015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L4_02",
+   "room": "office",
+   "slot": "L4_02",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Stapler, clamp into tray A · ink cartridge next to pencil case · keep pencil case, tray A in place",
+   "instruction": "Place stapler_0, clamp_2 inside tray_a. Place ink_cartridge_3 next to pencilcase_1. Release all manipulated objects. Keep pencilcase_1, tray_a within 5 cm of their initial XY positions.",
+   "objects": [
+    "stapler_0",
+    "clamp_2",
+    "ink_cartridge_3",
+    "pencilcase_1",
+    "tray_a",
+    "tray_b"
+   ],
+   "members": [
+    "clamp_2",
+    "ink_cartridge_3",
+    "stapler_0"
+   ],
+   "keep": [
+    "pencilcase_1",
+    "tray_a"
+   ],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l4_3d28d3bb6d66__v2",
+   "successes": 3,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 604021,
+     "success": true
+    },
+    {
+     "seed": 604022,
+     "success": true
+    },
+    {
+     "seed": 604023,
+     "success": false
+    },
+    {
+     "seed": 604024,
+     "success": true
+    },
+    {
+     "seed": 604025,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L4_03",
+   "room": "office",
+   "slot": "L4_03",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Stapler into tray A · ink cartridge next to pencil case · keep pencil case in place",
+   "instruction": "Place stapler_0 inside tray_a. Place ink_cartridge_3 next to pencilcase_1. Release all manipulated objects. Keep pencilcase_1 within 5 cm of their initial XY positions.",
+   "objects": [
+    "stapler_0",
+    "clamp_2",
+    "ink_cartridge_3",
+    "pencilcase_1",
+    "tray_a",
+    "tray_b"
+   ],
+   "members": [
+    "ink_cartridge_3",
+    "stapler_0"
+   ],
+   "keep": [
+    "pencilcase_1"
+   ],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l4_87c4d642fdd8__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 604031,
+     "success": true
+    },
+    {
+     "seed": 604032,
+     "success": true
+    },
+    {
+     "seed": 604033,
+     "success": true
+    },
+    {
+     "seed": 604034,
+     "success": true
+    },
+    {
+     "seed": 604035,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L4_04",
+   "room": "office",
+   "slot": "L4_04",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Clamp into tray A · ink cartridge next to pencil case · keep stapler in place",
+   "instruction": "Place clamp_2 inside tray_a. Place ink_cartridge_3 next to pencilcase_1. Release all manipulated objects. Keep stapler_0 within 5 cm of their initial XY positions.",
+   "objects": [
+    "stapler_0",
+    "clamp_2",
+    "ink_cartridge_3",
+    "pencilcase_1",
+    "tray_a",
+    "tray_b"
+   ],
+   "members": [
+    "clamp_2",
+    "ink_cartridge_3"
+   ],
+   "keep": [
+    "stapler_0"
+   ],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l4_e6a573c1a386__v2",
+   "successes": 0,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 604041,
+     "success": false
+    },
+    {
+     "seed": 604042,
+     "success": false
+    },
+    {
+     "seed": 604043,
+     "success": false
+    },
+    {
+     "seed": 604044,
+     "success": false
+    },
+    {
+     "seed": 604045,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L4_05",
+   "room": "office",
+   "slot": "L4_05",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Clamp into tray A · ink cartridge next to pencil case · keep pencil case, tray A, stapler in place",
+   "instruction": "Place clamp_2 inside tray_a. Place ink_cartridge_3 next to pencilcase_1. Release all manipulated objects. Keep pencilcase_1, tray_a, stapler_0 within 5 cm of their initial XY positions.",
+   "objects": [
+    "stapler_0",
+    "clamp_2",
+    "ink_cartridge_3",
+    "pencilcase_1",
+    "tray_a",
+    "tray_b"
+   ],
+   "members": [
+    "clamp_2",
+    "ink_cartridge_3"
+   ],
+   "keep": [
+    "pencilcase_1",
+    "stapler_0",
+    "tray_a"
+   ],
+   "task_name": "l5c2_office_work_desk__percassets_v4__curr_l4_13ccfc284568__v2",
+   "successes": 0,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 604051,
+     "success": false
+    },
+    {
+     "seed": 604052,
+     "success": false
+    },
+    {
+     "seed": 604053,
+     "success": false
+    },
+    {
+     "seed": 604054,
+     "success": false
+    },
+    {
+     "seed": 604055,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "office-L5_01",
+   "room": "office",
+   "slot": "L5_01",
+   "level": "L5",
+   "type": "full_goal",
+   "title": "Set up the desk for the day",
+   "instruction": "Set up the desk for the day: put the stapler and the clamp into the front tray, and put the ink cartridge right next to the pencil case (on the side facing away from the tray).",
+   "objects": [
+    "stapler_0",
+    "clamp_2",
+    "ink_cartridge_3",
+    "pencilcase_1",
+    "tray_a",
+    "tray_b"
+   ],
+   "members": [],
+   "keep": [],
+   "task_name": "l5c2_office_work_desk__percassets_v4",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 605011,
+     "success": true
+    },
+    {
+     "seed": 605012,
+     "success": true
+    },
+    {
+     "seed": 605013,
+     "success": true
+    },
+    {
+     "seed": 605014,
+     "success": true
+    },
+    {
+     "seed": 605015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L1_01",
+   "room": "kitchen",
+   "slot": "L1_01",
+   "level": "L1",
+   "type": "goal_subtask",
+   "title": "Push jar onto the target pad",
+   "instruction": "Push jar at target. Release all manipulated objects.",
+   "objects": [
+    "jar",
+    "target"
+   ],
+   "members": [
+    "jar"
+   ],
+   "keep": [],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l1_a9e8ea292509__v2",
+   "successes": 4,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 611011,
+     "success": true
+    },
+    {
+     "seed": 611012,
+     "success": true
+    },
+    {
+     "seed": 611013,
+     "success": true
+    },
+    {
+     "seed": 611014,
+     "success": false
+    },
+    {
+     "seed": 611015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L1_02",
+   "room": "kitchen",
+   "slot": "L1_02",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift fruit ≥ 6 cm",
+   "instruction": "Grasp fruit and hold it at least 0.06 m above its center height in the first observation after reset.",
+   "objects": [
+    "fruit"
+   ],
+   "members": [
+    "fruit"
+   ],
+   "keep": [],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l1_0f61805f203a__v2",
+   "successes": 3,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 611021,
+     "success": false
+    },
+    {
+     "seed": 611022,
+     "success": true
+    },
+    {
+     "seed": 611023,
+     "success": true
+    },
+    {
+     "seed": 611024,
+     "success": true
+    },
+    {
+     "seed": 611025,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L1_03",
+   "room": "kitchen",
+   "slot": "L1_03",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift fruit ≥ 12 cm",
+   "instruction": "Grasp fruit and hold it at least 0.12 m above its center height in the first observation after reset.",
+   "objects": [
+    "fruit"
+   ],
+   "members": [
+    "fruit"
+   ],
+   "keep": [],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l1_fcf4d8ca3cae__v2",
+   "successes": 3,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 611031,
+     "success": true
+    },
+    {
+     "seed": 611032,
+     "success": false
+    },
+    {
+     "seed": 611033,
+     "success": false
+    },
+    {
+     "seed": 611034,
+     "success": true
+    },
+    {
+     "seed": 611035,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L1_04",
+   "room": "kitchen",
+   "slot": "L1_04",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift pestle ≥ 6 cm",
+   "instruction": "Grasp pestle and hold it at least 0.06 m above its center height in the first observation after reset.",
+   "objects": [
+    "pestle"
+   ],
+   "members": [
+    "pestle"
+   ],
+   "keep": [],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l1_4d727ef811dc__v2",
+   "successes": 4,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 611041,
+     "success": true
+    },
+    {
+     "seed": 611042,
+     "success": true
+    },
+    {
+     "seed": 611043,
+     "success": false
+    },
+    {
+     "seed": 611044,
+     "success": true
+    },
+    {
+     "seed": 611045,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L1_05",
+   "room": "kitchen",
+   "slot": "L1_05",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift pestle ≥ 12 cm",
+   "instruction": "Grasp pestle and hold it at least 0.12 m above its center height in the first observation after reset.",
+   "objects": [
+    "pestle"
+   ],
+   "members": [
+    "pestle"
+   ],
+   "keep": [],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l1_2e6e433355a6__v2",
+   "successes": 1,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 611051,
+     "success": false
+    },
+    {
+     "seed": 611052,
+     "success": false
+    },
+    {
+     "seed": 611053,
+     "success": false
+    },
+    {
+     "seed": 611054,
+     "success": true
+    },
+    {
+     "seed": 611055,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L2_01",
+   "room": "kitchen",
+   "slot": "L2_01",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Fruit into cake pan",
+   "instruction": "Place fruit inside cake_pan. Release all manipulated objects.",
+   "objects": [
+    "fruit",
+    "cake_pan"
+   ],
+   "members": [
+    "fruit"
+   ],
+   "keep": [],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l2_b396e06846ce__v2",
+   "successes": 4,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 612011,
+     "success": true
+    },
+    {
+     "seed": 612012,
+     "success": true
+    },
+    {
+     "seed": 612013,
+     "success": true
+    },
+    {
+     "seed": 612014,
+     "success": true
+    },
+    {
+     "seed": 612015,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L2_02",
+   "room": "kitchen",
+   "slot": "L2_02",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Fruit into cake pan",
+   "instruction": "Place fruit inside cake_pan. Release all manipulated objects.",
+   "objects": [
+    "jar",
+    "fruit",
+    "cake_pan"
+   ],
+   "members": [
+    "fruit"
+   ],
+   "keep": [],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l2_070711e81f78__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 612021,
+     "success": true
+    },
+    {
+     "seed": 612022,
+     "success": true
+    },
+    {
+     "seed": 612023,
+     "success": true
+    },
+    {
+     "seed": 612024,
+     "success": true
+    },
+    {
+     "seed": 612025,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L2_03",
+   "room": "kitchen",
+   "slot": "L2_03",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Pestle next to mortar",
+   "instruction": "Place pestle next to mortar. Release all manipulated objects.",
+   "objects": [
+    "pestle",
+    "mortar"
+   ],
+   "members": [
+    "pestle"
+   ],
+   "keep": [],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l2_65060b6ce2d4__v2",
+   "successes": 4,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 612031,
+     "success": true
+    },
+    {
+     "seed": 612032,
+     "success": true
+    },
+    {
+     "seed": 612033,
+     "success": true
+    },
+    {
+     "seed": 612034,
+     "success": false
+    },
+    {
+     "seed": 612035,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L2_04",
+   "room": "kitchen",
+   "slot": "L2_04",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Pestle next to mortar",
+   "instruction": "Place pestle next to mortar. Release all manipulated objects.",
+   "objects": [
+    "jar",
+    "pestle",
+    "mortar"
+   ],
+   "members": [
+    "pestle"
+   ],
+   "keep": [],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l2_6217fe8bd6ed__v2",
+   "successes": 3,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 612041,
+     "success": false
+    },
+    {
+     "seed": 612042,
+     "success": false
+    },
+    {
+     "seed": 612043,
+     "success": true
+    },
+    {
+     "seed": 612044,
+     "success": true
+    },
+    {
+     "seed": 612045,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L2_05",
+   "room": "kitchen",
+   "slot": "L2_05",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Pestle next to mortar",
+   "instruction": "Place pestle next to mortar. Release all manipulated objects.",
+   "objects": [
+    "pestle",
+    "mortar",
+    "fruit"
+   ],
+   "members": [
+    "pestle"
+   ],
+   "keep": [],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l2_03eed4dbf6ec__v2",
+   "successes": 4,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 612051,
+     "success": true
+    },
+    {
+     "seed": 612052,
+     "success": true
+    },
+    {
+     "seed": 612053,
+     "success": false
+    },
+    {
+     "seed": 612054,
+     "success": true
+    },
+    {
+     "seed": 612055,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L3_01",
+   "room": "kitchen",
+   "slot": "L3_01",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Push jar onto the target pad · fruit into cake pan",
+   "instruction": "Push jar at target. Place fruit inside cake_pan. Release all manipulated objects.",
+   "objects": [
+    "jar",
+    "target",
+    "fruit",
+    "cake_pan"
+   ],
+   "members": [
+    "fruit",
+    "jar"
+   ],
+   "keep": [],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l3_12dd675bdaac__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 613011,
+     "success": true
+    },
+    {
+     "seed": 613012,
+     "success": true
+    },
+    {
+     "seed": 613013,
+     "success": true
+    },
+    {
+     "seed": 613014,
+     "success": true
+    },
+    {
+     "seed": 613015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L3_02",
+   "room": "kitchen",
+   "slot": "L3_02",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Push jar onto the target pad · pestle next to mortar",
+   "instruction": "Push jar at target. Place pestle next to mortar. Release all manipulated objects.",
+   "objects": [
+    "jar",
+    "target",
+    "pestle",
+    "mortar"
+   ],
+   "members": [
+    "jar",
+    "pestle"
+   ],
+   "keep": [],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l3_a41bf3380a62__v2",
+   "successes": 2,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 613021,
+     "success": false
+    },
+    {
+     "seed": 613022,
+     "success": true
+    },
+    {
+     "seed": 613023,
+     "success": true
+    },
+    {
+     "seed": 613024,
+     "success": false
+    },
+    {
+     "seed": 613025,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L3_03",
+   "room": "kitchen",
+   "slot": "L3_03",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Fruit into cake pan · pestle next to mortar",
+   "instruction": "Place fruit inside cake_pan. Place pestle next to mortar. Release all manipulated objects.",
+   "objects": [
+    "pestle",
+    "mortar",
+    "fruit",
+    "cake_pan"
+   ],
+   "members": [
+    "fruit",
+    "pestle"
+   ],
+   "keep": [],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l3_8f71c41b331c__v2",
+   "successes": 3,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 613031,
+     "success": true
+    },
+    {
+     "seed": 613032,
+     "success": false
+    },
+    {
+     "seed": 613033,
+     "success": true
+    },
+    {
+     "seed": 613034,
+     "success": true
+    },
+    {
+     "seed": 613035,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L3_04",
+   "room": "kitchen",
+   "slot": "L3_04",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Push jar onto the target pad · fruit into cake pan · pestle next to mortar",
+   "instruction": "Push jar at target. Place fruit inside cake_pan. Place pestle next to mortar. Release all manipulated objects.",
+   "objects": [
+    "jar",
+    "target",
+    "pestle",
+    "mortar",
+    "fruit",
+    "cake_pan"
+   ],
+   "members": [
+    "fruit",
+    "jar",
+    "pestle"
+   ],
+   "keep": [],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l3_de439a281981__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 613041,
+     "success": true
+    },
+    {
+     "seed": 613042,
+     "success": true
+    },
+    {
+     "seed": 613043,
+     "success": true
+    },
+    {
+     "seed": 613044,
+     "success": true
+    },
+    {
+     "seed": 613045,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L3_05",
+   "room": "kitchen",
+   "slot": "L3_05",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Fruit into cake pan · pestle next to mortar",
+   "instruction": "Place fruit inside cake_pan. Place pestle next to mortar. Release all manipulated objects.",
+   "objects": [
+    "jar",
+    "pestle",
+    "mortar",
+    "fruit",
+    "cake_pan"
+   ],
+   "members": [
+    "fruit",
+    "pestle"
+   ],
+   "keep": [],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l3_3431ee04d1ec__v2",
+   "successes": 3,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 613051,
+     "success": false
+    },
+    {
+     "seed": 613052,
+     "success": true
+    },
+    {
+     "seed": 613053,
+     "success": true
+    },
+    {
+     "seed": 613054,
+     "success": true
+    },
+    {
+     "seed": 613055,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L4_01",
+   "room": "kitchen",
+   "slot": "L4_01",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Push jar onto the target pad · fruit into cake pan · pestle next to mortar · keep cake pan, mortar, target in place",
+   "instruction": "Push jar at target. Place fruit inside cake_pan. Place pestle next to mortar. Release all manipulated objects. Keep cake_pan, mortar, target within 5 cm of their initial XY positions.",
+   "objects": [
+    "jar",
+    "target",
+    "pestle",
+    "mortar",
+    "fruit",
+    "cake_pan"
+   ],
+   "members": [
+    "fruit",
+    "jar",
+    "pestle"
+   ],
+   "keep": [
+    "cake_pan",
+    "mortar",
+    "target"
+   ],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l4_2eb96b4a58ba__v2",
+   "successes": 3,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 614011,
+     "success": false
+    },
+    {
+     "seed": 614012,
+     "success": true
+    },
+    {
+     "seed": 614013,
+     "success": false
+    },
+    {
+     "seed": 614014,
+     "success": true
+    },
+    {
+     "seed": 614015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L4_02",
+   "room": "kitchen",
+   "slot": "L4_02",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Push jar onto the target pad · fruit into cake pan · keep mortar, pestle in place",
+   "instruction": "Push jar at target. Place fruit inside cake_pan. Release all manipulated objects. Keep mortar, pestle within 5 cm of their initial XY positions.",
+   "objects": [
+    "jar",
+    "target",
+    "pestle",
+    "mortar",
+    "fruit",
+    "cake_pan"
+   ],
+   "members": [
+    "fruit",
+    "jar"
+   ],
+   "keep": [
+    "mortar",
+    "pestle"
+   ],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l4_9519285ebaa1__v2",
+   "successes": 0,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 614021,
+     "success": false
+    },
+    {
+     "seed": 614022,
+     "success": false
+    },
+    {
+     "seed": 614023,
+     "success": false
+    },
+    {
+     "seed": 614024,
+     "success": false
+    },
+    {
+     "seed": 614025,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L4_03",
+   "room": "kitchen",
+   "slot": "L4_03",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Push jar onto the target pad · fruit into cake pan · keep cake pan, mortar, target in place",
+   "instruction": "Push jar at target. Place fruit inside cake_pan. Release all manipulated objects. Keep cake_pan, mortar, target within 5 cm of their initial XY positions.",
+   "objects": [
+    "jar",
+    "target",
+    "pestle",
+    "mortar",
+    "fruit",
+    "cake_pan"
+   ],
+   "members": [
+    "fruit",
+    "jar"
+   ],
+   "keep": [
+    "cake_pan",
+    "mortar",
+    "target"
+   ],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l4_e8a5d47fef7a__v2",
+   "successes": 1,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 614031,
+     "success": false
+    },
+    {
+     "seed": 614032,
+     "success": true
+    },
+    {
+     "seed": 614033,
+     "success": false
+    },
+    {
+     "seed": 614034,
+     "success": false
+    },
+    {
+     "seed": 614035,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L4_04",
+   "room": "kitchen",
+   "slot": "L4_04",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Fruit into cake pan · pestle next to mortar · keep mortar, target, jar in place",
+   "instruction": "Place fruit inside cake_pan. Place pestle next to mortar. Release all manipulated objects. Keep mortar, target, jar within 5 cm of their initial XY positions.",
+   "objects": [
+    "jar",
+    "target",
+    "pestle",
+    "mortar",
+    "fruit",
+    "cake_pan"
+   ],
+   "members": [
+    "fruit",
+    "pestle"
+   ],
+   "keep": [
+    "jar",
+    "mortar",
+    "target"
+   ],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l4_35c918324236__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 614041,
+     "success": true
+    },
+    {
+     "seed": 614042,
+     "success": true
+    },
+    {
+     "seed": 614043,
+     "success": true
+    },
+    {
+     "seed": 614044,
+     "success": true
+    },
+    {
+     "seed": 614045,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L4_05",
+   "room": "kitchen",
+   "slot": "L4_05",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Push jar onto the target pad · fruit into cake pan · pestle next to mortar · keep mortar, target in place",
+   "instruction": "Push jar at target. Place fruit inside cake_pan. Place pestle next to mortar. Release all manipulated objects. Keep mortar, target within 5 cm of their initial XY positions.",
+   "objects": [
+    "jar",
+    "target",
+    "pestle",
+    "mortar",
+    "fruit",
+    "cake_pan"
+   ],
+   "members": [
+    "fruit",
+    "jar",
+    "pestle"
+   ],
+   "keep": [
+    "mortar",
+    "target"
+   ],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4__curr_l4_581b5365182a__v2",
+   "successes": 4,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 614051,
+     "success": true
+    },
+    {
+     "seed": 614052,
+     "success": true
+    },
+    {
+     "seed": 614053,
+     "success": true
+    },
+    {
+     "seed": 614054,
+     "success": false
+    },
+    {
+     "seed": 614055,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "kitchen-L5_01",
+   "room": "kitchen",
+   "slot": "L5_01",
+   "level": "L5",
+   "type": "full_goal",
+   "title": "Clear the island for cooking",
+   "instruction": "Clear the island for cooking: push the jar to the green pad, put the fruit into the cake pan, and move the pestle right next to the mortar.",
+   "objects": [
+    "jar",
+    "target",
+    "pestle",
+    "mortar",
+    "fruit",
+    "cake_pan"
+   ],
+   "members": [],
+   "keep": [],
+   "task_name": "l5c5_kitchen_counter_off__percassets_v4",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 615011,
+     "success": true
+    },
+    {
+     "seed": 615012,
+     "success": true
+    },
+    {
+     "seed": 615013,
+     "success": true
+    },
+    {
+     "seed": 615014,
+     "success": true
+    },
+    {
+     "seed": 615015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "dining-L1_01",
+   "room": "dining",
+   "slot": "L1_01",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift apple ≥ 6 cm",
+   "instruction": "Grasp apple and hold it at least 0.06 m above its center height in the first observation after reset.",
+   "objects": [
+    "apple"
+   ],
+   "members": [
+    "apple"
+   ],
+   "keep": [],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l1_bdd9dd5aae85__v2",
+   "successes": 3,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 621011,
+     "success": false
+    },
+    {
+     "seed": 621012,
+     "success": true
+    },
+    {
+     "seed": 621013,
+     "success": true
+    },
+    {
+     "seed": 621014,
+     "success": false
+    },
+    {
+     "seed": 621015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "dining-L1_02",
+   "room": "dining",
+   "slot": "L1_02",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift apple ≥ 12 cm",
+   "instruction": "Grasp apple and hold it at least 0.12 m above its center height in the first observation after reset.",
+   "objects": [
+    "apple"
+   ],
+   "members": [
+    "apple"
+   ],
+   "keep": [],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l1_13137f5c57ec__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 621021,
+     "success": true
+    },
+    {
+     "seed": 621022,
+     "success": true
+    },
+    {
+     "seed": 621023,
+     "success": true
+    },
+    {
+     "seed": 621024,
+     "success": true
+    },
+    {
+     "seed": 621025,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "dining-L1_03",
+   "room": "dining",
+   "slot": "L1_03",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift small pot ≥ 6 cm",
+   "instruction": "Grasp small_pot and hold it at least 0.06 m above its center height in the first observation after reset.",
+   "objects": [
+    "small_pot"
+   ],
+   "members": [
+    "small_pot"
+   ],
+   "keep": [],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l1_b6c394913d5b__v2",
+   "successes": 2,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 621031,
+     "success": true
+    },
+    {
+     "seed": 621032,
+     "success": false
+    },
+    {
+     "seed": 621033,
+     "success": false
+    },
+    {
+     "seed": 621034,
+     "success": true
+    },
+    {
+     "seed": 621035,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "dining-L1_04",
+   "room": "dining",
+   "slot": "L1_04",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift small pot ≥ 12 cm",
+   "instruction": "Grasp small_pot and hold it at least 0.12 m above its center height in the first observation after reset.",
+   "objects": [
+    "small_pot"
+   ],
+   "members": [
+    "small_pot"
+   ],
+   "keep": [],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l1_de465d9281df__v2",
+   "successes": 4,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 621041,
+     "success": true
+    },
+    {
+     "seed": 621042,
+     "success": false
+    },
+    {
+     "seed": 621043,
+     "success": true
+    },
+    {
+     "seed": 621044,
+     "success": true
+    },
+    {
+     "seed": 621045,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "dining-L1_05",
+   "room": "dining",
+   "slot": "L1_05",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift cover plate ≥ 6 cm",
+   "instruction": "Grasp cover_plate and hold it at least 0.06 m above its center height in the first observation after reset.",
+   "objects": [
+    "cover_plate"
+   ],
+   "members": [
+    "cover_plate"
+   ],
+   "keep": [],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l1_f5fae29cc9b4__v2",
+   "successes": 3,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 621051,
+     "success": true
+    },
+    {
+     "seed": 621052,
+     "success": true
+    },
+    {
+     "seed": 621053,
+     "success": false
+    },
+    {
+     "seed": 621054,
+     "success": true
+    },
+    {
+     "seed": 621055,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "dining-L2_01",
+   "room": "dining",
+   "slot": "L2_01",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Apple into cake pan",
+   "instruction": "Place apple inside cake_pan. Release all manipulated objects.",
+   "objects": [
+    "apple",
+    "cake_pan"
+   ],
+   "members": [
+    "apple"
+   ],
+   "keep": [],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l2_ff5d1f9161e3__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 622011,
+     "success": true
+    },
+    {
+     "seed": 622012,
+     "success": true
+    },
+    {
+     "seed": 622013,
+     "success": true
+    },
+    {
+     "seed": 622014,
+     "success": true
+    },
+    {
+     "seed": 622015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "dining-L2_02",
+   "room": "dining",
+   "slot": "L2_02",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Apple into cake pan",
+   "instruction": "Place apple inside cake_pan. Release all manipulated objects.",
+   "objects": [
+    "apple",
+    "cake_pan",
+    "small_pot"
+   ],
+   "members": [
+    "apple"
+   ],
+   "keep": [],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l2_8e9455c61c91__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 622021,
+     "success": true
+    },
+    {
+     "seed": 622022,
+     "success": true
+    },
+    {
+     "seed": 622023,
+     "success": true
+    },
+    {
+     "seed": 622024,
+     "success": true
+    },
+    {
+     "seed": 622025,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "dining-L2_03",
+   "room": "dining",
+   "slot": "L2_03",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Small pot into dessert bowl",
+   "instruction": "Place small_pot inside dessert_bowl. Release all manipulated objects.",
+   "objects": [
+    "dessert_bowl",
+    "small_pot"
+   ],
+   "members": [
+    "small_pot"
+   ],
+   "keep": [],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l2_875c4135953a__v2",
+   "successes": 4,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 622031,
+     "success": false
+    },
+    {
+     "seed": 622032,
+     "success": true
+    },
+    {
+     "seed": 622033,
+     "success": true
+    },
+    {
+     "seed": 622034,
+     "success": true
+    },
+    {
+     "seed": 622035,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "dining-L2_04",
+   "room": "dining",
+   "slot": "L2_04",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Small pot into dessert bowl",
+   "instruction": "Place small_pot inside dessert_bowl. Release all manipulated objects.",
+   "objects": [
+    "dessert_bowl",
+    "small_pot",
+    "cover_plate"
+   ],
+   "members": [
+    "small_pot"
+   ],
+   "keep": [],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l2_c70fd89078e5__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 622041,
+     "success": true
+    },
+    {
+     "seed": 622042,
+     "success": true
+    },
+    {
+     "seed": 622043,
+     "success": true
+    },
+    {
+     "seed": 622044,
+     "success": true
+    },
+    {
+     "seed": 622045,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "dining-L2_05",
+   "room": "dining",
+   "slot": "L2_05",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Cover plate covers base plate",
+   "instruction": "Place cover_plate covering base_plate. Release all manipulated objects.",
+   "objects": [
+    "base_plate",
+    "cover_plate"
+   ],
+   "members": [
+    "cover_plate"
+   ],
+   "keep": [],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l2_80dba445badb__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 622051,
+     "success": true
+    },
+    {
+     "seed": 622052,
+     "success": true
+    },
+    {
+     "seed": 622053,
+     "success": true
+    },
+    {
+     "seed": 622054,
+     "success": true
+    },
+    {
+     "seed": 622055,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "dining-L3_01",
+   "room": "dining",
+   "slot": "L3_01",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Apple into cake pan · small pot into dessert bowl",
+   "instruction": "Place apple inside cake_pan. Place small_pot inside dessert_bowl. Release all manipulated objects.",
+   "objects": [
+    "apple",
+    "cake_pan",
+    "dessert_bowl",
+    "small_pot"
+   ],
+   "members": [
+    "apple",
+    "small_pot"
+   ],
+   "keep": [],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l3_73c24396afe3__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 623011,
+     "success": true
+    },
+    {
+     "seed": 623012,
+     "success": true
+    },
+    {
+     "seed": 623013,
+     "success": true
+    },
+    {
+     "seed": 623014,
+     "success": true
+    },
+    {
+     "seed": 623015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "dining-L3_02",
+   "room": "dining",
+   "slot": "L3_02",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Apple into cake pan · cover plate covers base plate",
+   "instruction": "Place apple inside cake_pan. Place cover_plate covering base_plate. Release all manipulated objects.",
+   "objects": [
+    "apple",
+    "cake_pan",
+    "base_plate",
+    "cover_plate"
+   ],
+   "members": [
+    "apple",
+    "cover_plate"
+   ],
+   "keep": [],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l3_8597b18fd24c__v2",
+   "successes": 0,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 623021,
+     "success": false
+    },
+    {
+     "seed": 623022,
+     "success": false
+    },
+    {
+     "seed": 623023,
+     "success": false
+    },
+    {
+     "seed": 623024,
+     "success": false
+    },
+    {
+     "seed": 623025,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "dining-L3_03",
+   "room": "dining",
+   "slot": "L3_03",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Small pot into dessert bowl · cover plate covers base plate",
+   "instruction": "Place small_pot inside dessert_bowl. Place cover_plate covering base_plate. Release all manipulated objects.",
+   "objects": [
+    "dessert_bowl",
+    "small_pot",
+    "base_plate",
+    "cover_plate"
+   ],
+   "members": [
+    "cover_plate",
+    "small_pot"
+   ],
+   "keep": [],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l3_51ee48b0804c__v2",
+   "successes": 0,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 623031,
+     "success": false
+    },
+    {
+     "seed": 623032,
+     "success": false
+    },
+    {
+     "seed": 623033,
+     "success": false
+    },
+    {
+     "seed": 623034,
+     "success": false
+    },
+    {
+     "seed": 623035,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "dining-L3_04",
+   "room": "dining",
+   "slot": "L3_04",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Apple into cake pan · small pot into dessert bowl · cover plate covers base plate",
+   "instruction": "Place apple inside cake_pan. Place small_pot inside dessert_bowl. Place cover_plate covering base_plate. Release all manipulated objects.",
+   "objects": [
+    "apple",
+    "cake_pan",
+    "dessert_bowl",
+    "small_pot",
+    "base_plate",
+    "cover_plate"
+   ],
+   "members": [
+    "apple",
+    "cover_plate",
+    "small_pot"
+   ],
+   "keep": [],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l3_35d059e90cad__v2",
+   "successes": 0,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 623041,
+     "success": false
+    },
+    {
+     "seed": 623042,
+     "success": false
+    },
+    {
+     "seed": 623043,
+     "success": false
+    },
+    {
+     "seed": 623044,
+     "success": false
+    },
+    {
+     "seed": 623045,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "dining-L3_05",
+   "room": "dining",
+   "slot": "L3_05",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Apple into cake pan · cover plate covers base plate",
+   "instruction": "Place apple inside cake_pan. Place cover_plate covering base_plate. Release all manipulated objects.",
+   "objects": [
+    "apple",
+    "cake_pan",
+    "small_pot",
+    "base_plate",
+    "cover_plate"
+   ],
+   "members": [
+    "apple",
+    "cover_plate"
+   ],
+   "keep": [],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l3_beeba668cb6b__v2",
+   "successes": 0,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 623051,
+     "success": false
+    },
+    {
+     "seed": 623052,
+     "success": false
+    },
+    {
+     "seed": 623053,
+     "success": false
+    },
+    {
+     "seed": 623054,
+     "success": false
+    },
+    {
+     "seed": 623055,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "dining-L4_01",
+   "room": "dining",
+   "slot": "L4_01",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Apple into cake pan · small pot into dessert bowl · keep base plate, cake pan, dessert bowl, cover plate in place",
+   "instruction": "Place apple inside cake_pan. Place small_pot inside dessert_bowl. Release all manipulated objects. Keep base_plate, cake_pan, dessert_bowl, cover_plate within 5 cm of their initial XY positions.",
+   "objects": [
+    "apple",
+    "pear",
+    "cake_pan",
+    "dessert_bowl",
+    "small_pot",
+    "base_plate",
+    "cover_plate"
+   ],
+   "members": [
+    "apple",
+    "small_pot"
+   ],
+   "keep": [
+    "base_plate",
+    "cake_pan",
+    "cover_plate",
+    "dessert_bowl"
+   ],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l4_5f46bf200bda__v2",
+   "successes": 0,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 624011,
+     "success": false
+    },
+    {
+     "seed": 624012,
+     "success": false
+    },
+    {
+     "seed": 624013,
+     "success": false
+    },
+    {
+     "seed": 624014,
+     "success": false
+    },
+    {
+     "seed": 624015,
+     "success": false
+    }
+   ],
+   "revised": true
+  },
+  {
+   "id": "dining-L4_02",
+   "room": "dining",
+   "slot": "L4_02",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Apple into cake pan · cover plate covers base plate · keep base plate, cake pan, dessert bowl, small pot in place",
+   "instruction": "Place apple inside cake_pan. Place cover_plate covering base_plate. Release all manipulated objects. Keep base_plate, cake_pan, dessert_bowl, small_pot within 5 cm of their initial XY positions.",
+   "objects": [
+    "apple",
+    "pear",
+    "cake_pan",
+    "dessert_bowl",
+    "small_pot",
+    "base_plate",
+    "cover_plate"
+   ],
+   "members": [
+    "apple",
+    "cover_plate"
+   ],
+   "keep": [
+    "base_plate",
+    "cake_pan",
+    "dessert_bowl",
+    "small_pot"
+   ],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l4_b333578a4aef__v2",
+   "successes": 0,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 624021,
+     "success": false
+    },
+    {
+     "seed": 624022,
+     "success": false
+    },
+    {
+     "seed": 624023,
+     "success": false
+    },
+    {
+     "seed": 624024,
+     "success": false
+    },
+    {
+     "seed": 624025,
+     "success": false
+    }
+   ],
+   "revised": true
+  },
+  {
+   "id": "dining-L4_03",
+   "room": "dining",
+   "slot": "L4_03",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Small pot into dessert bowl · cover plate covers base plate · keep base plate, cake pan, dessert bowl, apple in place",
+   "instruction": "Place small_pot inside dessert_bowl. Place cover_plate covering base_plate. Release all manipulated objects. Keep base_plate, cake_pan, dessert_bowl, apple within 5 cm of their initial XY positions.",
+   "objects": [
+    "apple",
+    "pear",
+    "cake_pan",
+    "dessert_bowl",
+    "small_pot",
+    "base_plate",
+    "cover_plate"
+   ],
+   "members": [
+    "cover_plate",
+    "small_pot"
+   ],
+   "keep": [
+    "apple",
+    "base_plate",
+    "cake_pan",
+    "dessert_bowl"
+   ],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l4_30f4a64c4d97__v2",
+   "successes": 0,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 624031,
+     "success": false
+    },
+    {
+     "seed": 624032,
+     "success": false
+    },
+    {
+     "seed": 624033,
+     "success": false
+    },
+    {
+     "seed": 624034,
+     "success": false
+    },
+    {
+     "seed": 624035,
+     "success": false
+    }
+   ],
+   "revised": true
+  },
+  {
+   "id": "dining-L4_04",
+   "room": "dining",
+   "slot": "L4_04",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Apple into cake pan · small pot into dessert bowl · cover plate covers base plate · keep base plate, cake pan, dessert bowl in place",
+   "instruction": "Place apple inside cake_pan. Place small_pot inside dessert_bowl. Place cover_plate covering base_plate. Release all manipulated objects. Keep base_plate, cake_pan, dessert_bowl within 5 cm of their initial XY positions.",
+   "objects": [
+    "apple",
+    "pear",
+    "cake_pan",
+    "dessert_bowl",
+    "small_pot",
+    "base_plate",
+    "cover_plate"
+   ],
+   "members": [
+    "apple",
+    "cover_plate",
+    "small_pot"
+   ],
+   "keep": [
+    "base_plate",
+    "cake_pan",
+    "dessert_bowl"
+   ],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l4_da94197112bd__v2",
+   "successes": 0,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 624041,
+     "success": false
+    },
+    {
+     "seed": 624042,
+     "success": false
+    },
+    {
+     "seed": 624043,
+     "success": false
+    },
+    {
+     "seed": 624044,
+     "success": false
+    },
+    {
+     "seed": 624045,
+     "success": false
+    }
+   ],
+   "revised": true
+  },
+  {
+   "id": "dining-L4_05",
+   "room": "dining",
+   "slot": "L4_05",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Apple into cake pan · small pot into dessert bowl · cover plate covers base plate · keep base plate in place",
+   "instruction": "Place apple inside cake_pan. Place small_pot inside dessert_bowl. Place cover_plate covering base_plate. Release all manipulated objects. Keep base_plate within 5 cm of their initial XY positions.",
+   "objects": [
+    "apple",
+    "pear",
+    "cake_pan",
+    "dessert_bowl",
+    "small_pot",
+    "base_plate",
+    "cover_plate"
+   ],
+   "members": [
+    "apple",
+    "cover_plate",
+    "small_pot"
+   ],
+   "keep": [
+    "base_plate"
+   ],
+   "task_name": "l5c4_dining_serve__percassets_v4__curr_l4_191d7703b2c9__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 624051,
+     "success": true
+    },
+    {
+     "seed": 624052,
+     "success": true
+    },
+    {
+     "seed": 624053,
+     "success": true
+    },
+    {
+     "seed": 624054,
+     "success": true
+    },
+    {
+     "seed": 624055,
+     "success": true
+    }
+   ],
+   "revised": true
+  },
+  {
+   "id": "dining-L5_01",
+   "room": "dining",
+   "slot": "L5_01",
+   "level": "L5",
+   "type": "full_goal",
+   "title": "Serve the table",
+   "instruction": "Serve the table: put the apple into the cake pan, nest the small clay pot inside the dessert bowl, and cover the base plate with the cover.",
+   "objects": [
+    "apple",
+    "pear",
+    "cake_pan",
+    "dessert_bowl",
+    "small_pot",
+    "base_plate",
+    "cover_plate"
+   ],
+   "members": [],
+   "keep": [],
+   "task_name": "l5c4_dining_serve__percassets_v4",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 625011,
+     "success": true
+    },
+    {
+     "seed": 625012,
+     "success": true
+    },
+    {
+     "seed": 625013,
+     "success": true
+    },
+    {
+     "seed": 625014,
+     "success": true
+    },
+    {
+     "seed": 625015,
+     "success": true
+    }
+   ],
+   "revised": true
+  },
+  {
+   "id": "living-L1_01",
+   "room": "living",
+   "slot": "L1_01",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift handball ≥ 12 cm",
+   "instruction": "Grasp handball_0 and hold it at least 0.12 m above its center height in the first observation after reset.",
+   "objects": [
+    "handball_0"
+   ],
+   "members": [
+    "handball_0"
+   ],
+   "keep": [],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l1_c343913c1f02__v2",
+   "successes": 4,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 631011,
+     "success": true
+    },
+    {
+     "seed": 631012,
+     "success": true
+    },
+    {
+     "seed": 631013,
+     "success": true
+    },
+    {
+     "seed": 631014,
+     "success": false
+    },
+    {
+     "seed": 631015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L1_02",
+   "room": "living",
+   "slot": "L1_02",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift pickleball ≥ 12 cm",
+   "instruction": "Grasp pickleball_2 and hold it at least 0.12 m above its center height in the first observation after reset.",
+   "objects": [
+    "pickleball_2"
+   ],
+   "members": [
+    "pickleball_2"
+   ],
+   "keep": [],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l1_0b6901ceee29__v2",
+   "successes": 4,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 631021,
+     "success": true
+    },
+    {
+     "seed": 631022,
+     "success": true
+    },
+    {
+     "seed": 631023,
+     "success": false
+    },
+    {
+     "seed": 631024,
+     "success": true
+    },
+    {
+     "seed": 631025,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L1_03",
+   "room": "living",
+   "slot": "L1_03",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift cup 0 ≥ 12 cm",
+   "instruction": "Grasp cup_0 and hold it at least 0.12 m above its center height in the first observation after reset.",
+   "objects": [
+    "cup_0"
+   ],
+   "members": [
+    "cup_0"
+   ],
+   "keep": [],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l1_77cac7f8eb21__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 631031,
+     "success": true
+    },
+    {
+     "seed": 631032,
+     "success": true
+    },
+    {
+     "seed": 631033,
+     "success": true
+    },
+    {
+     "seed": 631034,
+     "success": true
+    },
+    {
+     "seed": 631035,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L1_04",
+   "room": "living",
+   "slot": "L1_04",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift cup 1 ≥ 12 cm",
+   "instruction": "Grasp cup_1 and hold it at least 0.12 m above its center height in the first observation after reset.",
+   "objects": [
+    "cup_1"
+   ],
+   "members": [
+    "cup_1"
+   ],
+   "keep": [],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l1_b92047ae8a85__v2",
+   "successes": 4,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 631041,
+     "success": true
+    },
+    {
+     "seed": 631042,
+     "success": true
+    },
+    {
+     "seed": 631043,
+     "success": false
+    },
+    {
+     "seed": 631044,
+     "success": true
+    },
+    {
+     "seed": 631045,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L1_05",
+   "room": "living",
+   "slot": "L1_05",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift cup 2 ≥ 12 cm",
+   "instruction": "Grasp cup_2 and hold it at least 0.12 m above its center height in the first observation after reset.",
+   "objects": [
+    "cup_2"
+   ],
+   "members": [
+    "cup_2"
+   ],
+   "keep": [],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l1_88526d9d55fd__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 631051,
+     "success": true
+    },
+    {
+     "seed": 631052,
+     "success": true
+    },
+    {
+     "seed": 631053,
+     "success": true
+    },
+    {
+     "seed": 631054,
+     "success": true
+    },
+    {
+     "seed": 631055,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L2_01",
+   "room": "living",
+   "slot": "L2_01",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Handball into tray",
+   "instruction": "Place handball_0 inside tray. Release all manipulated objects.",
+   "objects": [
+    "handball_0",
+    "tray"
+   ],
+   "members": [
+    "handball_0"
+   ],
+   "keep": [],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l2_45318e2eae29__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 632011,
+     "success": true
+    },
+    {
+     "seed": 632012,
+     "success": true
+    },
+    {
+     "seed": 632013,
+     "success": true
+    },
+    {
+     "seed": 632014,
+     "success": true
+    },
+    {
+     "seed": 632015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L2_02",
+   "room": "living",
+   "slot": "L2_02",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Pickleball into tray",
+   "instruction": "Place pickleball_2 inside tray. Release all manipulated objects.",
+   "objects": [
+    "pickleball_2",
+    "tray"
+   ],
+   "members": [
+    "pickleball_2"
+   ],
+   "keep": [],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l2_c0ebf9f13fe0__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 632021,
+     "success": true
+    },
+    {
+     "seed": 632022,
+     "success": true
+    },
+    {
+     "seed": 632023,
+     "success": true
+    },
+    {
+     "seed": 632024,
+     "success": true
+    },
+    {
+     "seed": 632025,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L2_03",
+   "room": "living",
+   "slot": "L2_03",
+   "level": "L2",
+   "type": "component_probe",
+   "title": "Cup 0 to (3.98, 2.3)",
+   "instruction": "Place cup_0 at table XY (3.98, 2.3) (within 3 cm). Release all manipulated objects.",
+   "objects": [
+    "cup_0",
+    "handball_0"
+   ],
+   "members": [
+    "cup_0"
+   ],
+   "keep": [],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l2_766975dbc2cd__v2",
+   "successes": 1,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 632031,
+     "success": false
+    },
+    {
+     "seed": 632032,
+     "success": false
+    },
+    {
+     "seed": 632033,
+     "success": false
+    },
+    {
+     "seed": 632034,
+     "success": false
+    },
+    {
+     "seed": 632035,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L2_04",
+   "room": "living",
+   "slot": "L2_04",
+   "level": "L2",
+   "type": "component_probe",
+   "title": "Cup 1 to (3.98, 2.4)",
+   "instruction": "Place cup_1 at table XY (3.98, 2.4) (within 3 cm). Release all manipulated objects.",
+   "objects": [
+    "cup_1",
+    "pickleball_2"
+   ],
+   "members": [
+    "cup_1"
+   ],
+   "keep": [],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l2_7394427982fe__v2",
+   "successes": 1,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 632041,
+     "success": false
+    },
+    {
+     "seed": 632042,
+     "success": false
+    },
+    {
+     "seed": 632043,
+     "success": false
+    },
+    {
+     "seed": 632044,
+     "success": true
+    },
+    {
+     "seed": 632045,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L2_05",
+   "room": "living",
+   "slot": "L2_05",
+   "level": "L2",
+   "type": "component_probe",
+   "title": "Cup 2 to (3.98, 2.5)",
+   "instruction": "Place cup_2 at table XY (3.98, 2.5) (within 3 cm). Release all manipulated objects.",
+   "objects": [
+    "cup_2"
+   ],
+   "members": [
+    "cup_2"
+   ],
+   "keep": [],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l2_6dbbb73d341a__v2",
+   "successes": 1,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 632051,
+     "success": false
+    },
+    {
+     "seed": 632052,
+     "success": true
+    },
+    {
+     "seed": 632053,
+     "success": false
+    },
+    {
+     "seed": 632054,
+     "success": false
+    },
+    {
+     "seed": 632055,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L3_01",
+   "room": "living",
+   "slot": "L3_01",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Handball, pickleball into tray",
+   "instruction": "Place handball_0, pickleball_2 inside tray. Release all manipulated objects.",
+   "objects": [
+    "handball_0",
+    "pickleball_2",
+    "tray"
+   ],
+   "members": [
+    "handball_0",
+    "pickleball_2"
+   ],
+   "keep": [],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l3_89f04c16b8bc__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 633011,
+     "success": true
+    },
+    {
+     "seed": 633012,
+     "success": true
+    },
+    {
+     "seed": 633013,
+     "success": true
+    },
+    {
+     "seed": 633014,
+     "success": true
+    },
+    {
+     "seed": 633015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L3_02",
+   "room": "living",
+   "slot": "L3_02",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Line up cup 0, cup 1, cup 2",
+   "instruction": "Line up cup_0, cup_1, cup_2 in one straight row on the table. Release all manipulated objects.",
+   "objects": [
+    "cup_0",
+    "cup_1",
+    "cup_2"
+   ],
+   "members": [
+    "cup_0",
+    "cup_1",
+    "cup_2"
+   ],
+   "keep": [],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l3_0583d20b0de1__v2",
+   "successes": 1,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 633021,
+     "success": true
+    },
+    {
+     "seed": 633022,
+     "success": false
+    },
+    {
+     "seed": 633023,
+     "success": false
+    },
+    {
+     "seed": 633024,
+     "success": false
+    },
+    {
+     "seed": 633025,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L3_03",
+   "room": "living",
+   "slot": "L3_03",
+   "level": "L3",
+   "type": "component_probe",
+   "title": "Handball into tray · cup 0 to (3.98, 2.3)",
+   "instruction": "Place handball_0 inside tray. Place cup_0 at table XY (3.98, 2.3) (within 3 cm). Release all manipulated objects.",
+   "objects": [
+    "cup_0",
+    "handball_0",
+    "tray"
+   ],
+   "members": [
+    "cup_0",
+    "handball_0"
+   ],
+   "keep": [],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l3_02335a7ad2ea__v2",
+   "successes": 1,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 633031,
+     "success": false
+    },
+    {
+     "seed": 633032,
+     "success": false
+    },
+    {
+     "seed": 633033,
+     "success": false
+    },
+    {
+     "seed": 633034,
+     "success": false
+    },
+    {
+     "seed": 633035,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L3_04",
+   "room": "living",
+   "slot": "L3_04",
+   "level": "L3",
+   "type": "component_probe",
+   "title": "Pickleball into tray · cup 1 to (3.98, 2.4)",
+   "instruction": "Place pickleball_2 inside tray. Place cup_1 at table XY (3.98, 2.4) (within 3 cm). Release all manipulated objects.",
+   "objects": [
+    "cup_1",
+    "pickleball_2",
+    "tray"
+   ],
+   "members": [
+    "cup_1",
+    "pickleball_2"
+   ],
+   "keep": [],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l3_205bf0fcaceb__v2",
+   "successes": 2,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 633041,
+     "success": false
+    },
+    {
+     "seed": 633042,
+     "success": false
+    },
+    {
+     "seed": 633043,
+     "success": false
+    },
+    {
+     "seed": 633044,
+     "success": true
+    },
+    {
+     "seed": 633045,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L3_05",
+   "room": "living",
+   "slot": "L3_05",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Handball, pickleball into tray · Line up cup 0, cup 1, cup 2",
+   "instruction": "Place handball_0, pickleball_2 inside tray. Line up cup_0, cup_1, cup_2 in one straight row on the table. Release all manipulated objects.",
+   "objects": [
+    "cup_0",
+    "cup_1",
+    "cup_2",
+    "handball_0",
+    "pickleball_2",
+    "tray"
+   ],
+   "members": [
+    "cup_0",
+    "cup_1",
+    "cup_2",
+    "handball_0",
+    "pickleball_2"
+   ],
+   "keep": [],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l3_1e6b42c1d636__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 633051,
+     "success": true
+    },
+    {
+     "seed": 633052,
+     "success": true
+    },
+    {
+     "seed": 633053,
+     "success": true
+    },
+    {
+     "seed": 633054,
+     "success": true
+    },
+    {
+     "seed": 633055,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L4_01",
+   "room": "living",
+   "slot": "L4_01",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Handball, pickleball into tray · Line up cup 0, cup 1, cup 2 · keep tray in place",
+   "instruction": "Place handball_0, pickleball_2 inside tray. Line up cup_0, cup_1, cup_2 in one straight row on the table. Release all manipulated objects. Keep tray within 5 cm of their initial XY positions.",
+   "objects": [
+    "cup_0",
+    "cup_1",
+    "cup_2",
+    "handball_0",
+    "pickleball_2",
+    "tray"
+   ],
+   "members": [
+    "cup_0",
+    "cup_1",
+    "cup_2",
+    "handball_0",
+    "pickleball_2"
+   ],
+   "keep": [
+    "tray"
+   ],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l4_ce14642caf97__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 634011,
+     "success": true
+    },
+    {
+     "seed": 634012,
+     "success": true
+    },
+    {
+     "seed": 634013,
+     "success": true
+    },
+    {
+     "seed": 634014,
+     "success": true
+    },
+    {
+     "seed": 634015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L4_02",
+   "room": "living",
+   "slot": "L4_02",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Handball into tray · Line up cup 0, cup 1, cup 2 · keep pickleball in place",
+   "instruction": "Place handball_0 inside tray. Line up cup_0, cup_1, cup_2 in one straight row on the table. Release all manipulated objects. Keep pickleball_2 within 5 cm of their initial XY positions.",
+   "objects": [
+    "cup_0",
+    "cup_1",
+    "cup_2",
+    "handball_0",
+    "pickleball_2",
+    "tray"
+   ],
+   "members": [
+    "cup_0",
+    "cup_1",
+    "cup_2",
+    "handball_0"
+   ],
+   "keep": [
+    "pickleball_2"
+   ],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l4_fa42f4ba428d__v2",
+   "successes": 2,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 634021,
+     "success": false
+    },
+    {
+     "seed": 634022,
+     "success": false
+    },
+    {
+     "seed": 634023,
+     "success": true
+    },
+    {
+     "seed": 634024,
+     "success": false
+    },
+    {
+     "seed": 634025,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L4_03",
+   "room": "living",
+   "slot": "L4_03",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Handball, pickleball into tray · cup 0 to (3.98, 2.3) · keep tray in place",
+   "instruction": "Place handball_0, pickleball_2 inside tray. Place cup_0 at table XY (3.98, 2.3) (within 3 cm). Release all manipulated objects. Keep tray within 5 cm of their initial XY positions.",
+   "objects": [
+    "cup_0",
+    "cup_1",
+    "cup_2",
+    "handball_0",
+    "pickleball_2",
+    "tray"
+   ],
+   "members": [
+    "cup_0",
+    "handball_0",
+    "pickleball_2"
+   ],
+   "keep": [
+    "tray"
+   ],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l4_b4adeae59891__v2",
+   "successes": 0,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 634031,
+     "success": false
+    },
+    {
+     "seed": 634032,
+     "success": false
+    },
+    {
+     "seed": 634033,
+     "success": false
+    },
+    {
+     "seed": 634034,
+     "success": false
+    },
+    {
+     "seed": 634035,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L4_04",
+   "room": "living",
+   "slot": "L4_04",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Handball into tray · cup 0 to (3.98, 2.3) · keep cup 1 in place",
+   "instruction": "Place handball_0 inside tray. Place cup_0 at table XY (3.98, 2.3) (within 3 cm). Release all manipulated objects. Keep cup_1 within 5 cm of their initial XY positions.",
+   "objects": [
+    "cup_0",
+    "cup_1",
+    "cup_2",
+    "handball_0",
+    "pickleball_2",
+    "tray"
+   ],
+   "members": [
+    "cup_0",
+    "handball_0"
+   ],
+   "keep": [
+    "cup_1"
+   ],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l4_a335cf3f18b4__v2",
+   "successes": 1,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 634041,
+     "success": true
+    },
+    {
+     "seed": 634042,
+     "success": false
+    },
+    {
+     "seed": 634043,
+     "success": false
+    },
+    {
+     "seed": 634044,
+     "success": false
+    },
+    {
+     "seed": 634045,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L4_05",
+   "room": "living",
+   "slot": "L4_05",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Pickleball into tray · cup 2 to (3.98, 2.5) · keep cup 1 in place",
+   "instruction": "Place pickleball_2 inside tray. Place cup_2 at table XY (3.98, 2.5) (within 3 cm). Release all manipulated objects. Keep cup_1 within 5 cm of their initial XY positions.",
+   "objects": [
+    "cup_0",
+    "cup_1",
+    "cup_2",
+    "handball_0",
+    "pickleball_2",
+    "tray"
+   ],
+   "members": [
+    "cup_2",
+    "pickleball_2"
+   ],
+   "keep": [
+    "cup_1"
+   ],
+   "task_name": "l5c_living_tidy_table__percassets_v4__curr_l4_e1746493f18c__v2",
+   "successes": 0,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 634051,
+     "success": false
+    },
+    {
+     "seed": 634052,
+     "success": false
+    },
+    {
+     "seed": 634053,
+     "success": false
+    },
+    {
+     "seed": 634054,
+     "success": false
+    },
+    {
+     "seed": 634055,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "living-L5_01",
+   "room": "living",
+   "slot": "L5_01",
+   "level": "L5",
+   "type": "full_goal",
+   "title": "Tidy the coffee table",
+   "instruction": "Tidy the coffee table: put both balls into the tray, and line the three cups up in one neat straight row.",
+   "objects": [
+    "cup_0",
+    "cup_1",
+    "cup_2",
+    "handball_0",
+    "pickleball_2",
+    "tray"
+   ],
+   "members": [],
+   "keep": [],
+   "task_name": "l5c_living_tidy_table__percassets_v4",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 635011,
+     "success": true
+    },
+    {
+     "seed": 635012,
+     "success": true
+    },
+    {
+     "seed": 635013,
+     "success": true
+    },
+    {
+     "seed": 635014,
+     "success": true
+    },
+    {
+     "seed": 635015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L1_01",
+   "room": "bathroom",
+   "slot": "L1_01",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift bottle 0 ≥ 12 cm",
+   "instruction": "Grasp bottle_0 and hold it at least 0.12 m above its center height in the first observation after reset.",
+   "objects": [
+    "bottle_0"
+   ],
+   "members": [
+    "bottle_0"
+   ],
+   "keep": [],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l1_5204b044f35c__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 641011,
+     "success": true
+    },
+    {
+     "seed": 641012,
+     "success": true
+    },
+    {
+     "seed": 641013,
+     "success": true
+    },
+    {
+     "seed": 641014,
+     "success": true
+    },
+    {
+     "seed": 641015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L1_02",
+   "room": "bathroom",
+   "slot": "L1_02",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift bottle 1 ≥ 12 cm",
+   "instruction": "Grasp bottle_1 and hold it at least 0.12 m above its center height in the first observation after reset.",
+   "objects": [
+    "bottle_1"
+   ],
+   "members": [
+    "bottle_1"
+   ],
+   "keep": [],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l1_7fc4f7ec595e__v2",
+   "successes": 4,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 641021,
+     "success": false
+    },
+    {
+     "seed": 641022,
+     "success": true
+    },
+    {
+     "seed": 641023,
+     "success": true
+    },
+    {
+     "seed": 641024,
+     "success": true
+    },
+    {
+     "seed": 641025,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L1_03",
+   "room": "bathroom",
+   "slot": "L1_03",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift brush 2 ≥ 6 cm",
+   "instruction": "Grasp brush_2 and hold it at least 0.06 m above its center height in the first observation after reset.",
+   "objects": [
+    "brush_2"
+   ],
+   "members": [
+    "brush_2"
+   ],
+   "keep": [],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l1_f6f1ef11519f__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 641031,
+     "success": true
+    },
+    {
+     "seed": 641032,
+     "success": true
+    },
+    {
+     "seed": 641033,
+     "success": true
+    },
+    {
+     "seed": 641034,
+     "success": true
+    },
+    {
+     "seed": 641035,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L1_04",
+   "room": "bathroom",
+   "slot": "L1_04",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift brush 3 ≥ 6 cm",
+   "instruction": "Grasp brush_3 and hold it at least 0.06 m above its center height in the first observation after reset.",
+   "objects": [
+    "brush_3"
+   ],
+   "members": [
+    "brush_3"
+   ],
+   "keep": [],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l1_b17a4c32abc8__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 641041,
+     "success": true
+    },
+    {
+     "seed": 641042,
+     "success": true
+    },
+    {
+     "seed": 641043,
+     "success": true
+    },
+    {
+     "seed": 641044,
+     "success": true
+    },
+    {
+     "seed": 641045,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L1_05",
+   "room": "bathroom",
+   "slot": "L1_05",
+   "level": "L1",
+   "type": "component_probe",
+   "title": "Lift brush 2 ≥ 12 cm",
+   "instruction": "Grasp brush_2 and hold it at least 0.12 m above its center height in the first observation after reset.",
+   "objects": [
+    "brush_2"
+   ],
+   "members": [
+    "brush_2"
+   ],
+   "keep": [],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l1_35d19d410191__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 641051,
+     "success": true
+    },
+    {
+     "seed": 641052,
+     "success": true
+    },
+    {
+     "seed": 641053,
+     "success": true
+    },
+    {
+     "seed": 641054,
+     "success": true
+    },
+    {
+     "seed": 641055,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L2_01",
+   "room": "bathroom",
+   "slot": "L2_01",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Bottle 0 into bin A",
+   "instruction": "Place bottle_0 inside bin_a. Release all manipulated objects.",
+   "objects": [
+    "bottle_0",
+    "bin_a"
+   ],
+   "members": [
+    "bottle_0"
+   ],
+   "keep": [],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l2_7e4eaed4e563__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 642011,
+     "success": true
+    },
+    {
+     "seed": 642012,
+     "success": true
+    },
+    {
+     "seed": 642013,
+     "success": true
+    },
+    {
+     "seed": 642014,
+     "success": true
+    },
+    {
+     "seed": 642015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L2_02",
+   "room": "bathroom",
+   "slot": "L2_02",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Bottle 1 into bin A",
+   "instruction": "Place bottle_1 inside bin_a. Release all manipulated objects.",
+   "objects": [
+    "bottle_1",
+    "bin_a"
+   ],
+   "members": [
+    "bottle_1"
+   ],
+   "keep": [],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l2_5196f6f9e325__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 642021,
+     "success": true
+    },
+    {
+     "seed": 642022,
+     "success": true
+    },
+    {
+     "seed": 642023,
+     "success": true
+    },
+    {
+     "seed": 642024,
+     "success": true
+    },
+    {
+     "seed": 642025,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L2_03",
+   "room": "bathroom",
+   "slot": "L2_03",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Brush 2 into bin B",
+   "instruction": "Place brush_2 inside bin_b. Release all manipulated objects.",
+   "objects": [
+    "brush_2",
+    "bin_b"
+   ],
+   "members": [
+    "brush_2"
+   ],
+   "keep": [],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l2_f7fd7719e45a__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 642031,
+     "success": true
+    },
+    {
+     "seed": 642032,
+     "success": true
+    },
+    {
+     "seed": 642033,
+     "success": true
+    },
+    {
+     "seed": 642034,
+     "success": true
+    },
+    {
+     "seed": 642035,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L2_04",
+   "room": "bathroom",
+   "slot": "L2_04",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Brush 3 into bin B",
+   "instruction": "Place brush_3 inside bin_b. Release all manipulated objects.",
+   "objects": [
+    "brush_3",
+    "bin_b"
+   ],
+   "members": [
+    "brush_3"
+   ],
+   "keep": [],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l2_d910c670bde6__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 642041,
+     "success": true
+    },
+    {
+     "seed": 642042,
+     "success": true
+    },
+    {
+     "seed": 642043,
+     "success": true
+    },
+    {
+     "seed": 642044,
+     "success": true
+    },
+    {
+     "seed": 642045,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L2_05",
+   "room": "bathroom",
+   "slot": "L2_05",
+   "level": "L2",
+   "type": "goal_subtask",
+   "title": "Bottle 0 into bin A",
+   "instruction": "Place bottle_0 inside bin_a. Release all manipulated objects.",
+   "objects": [
+    "bottle_0",
+    "brush_2",
+    "bin_a"
+   ],
+   "members": [
+    "bottle_0"
+   ],
+   "keep": [],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l2_4b42206edb6a__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 642051,
+     "success": true
+    },
+    {
+     "seed": 642052,
+     "success": true
+    },
+    {
+     "seed": 642053,
+     "success": true
+    },
+    {
+     "seed": 642054,
+     "success": true
+    },
+    {
+     "seed": 642055,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L3_01",
+   "room": "bathroom",
+   "slot": "L3_01",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Bottle 0, bottle 1 into bin A",
+   "instruction": "Place bottle_0, bottle_1 inside bin_a. Release all manipulated objects.",
+   "objects": [
+    "bottle_0",
+    "bottle_1",
+    "bin_a"
+   ],
+   "members": [
+    "bottle_0",
+    "bottle_1"
+   ],
+   "keep": [],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l3_888828c21a71__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 643011,
+     "success": true
+    },
+    {
+     "seed": 643012,
+     "success": true
+    },
+    {
+     "seed": 643013,
+     "success": true
+    },
+    {
+     "seed": 643014,
+     "success": true
+    },
+    {
+     "seed": 643015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L3_02",
+   "room": "bathroom",
+   "slot": "L3_02",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Brush 2, brush 3 into bin B",
+   "instruction": "Place brush_2, brush_3 inside bin_b. Release all manipulated objects.",
+   "objects": [
+    "brush_2",
+    "brush_3",
+    "bin_b"
+   ],
+   "members": [
+    "brush_2",
+    "brush_3"
+   ],
+   "keep": [],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l3_b1ffe81f594b__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 643021,
+     "success": true
+    },
+    {
+     "seed": 643022,
+     "success": true
+    },
+    {
+     "seed": 643023,
+     "success": true
+    },
+    {
+     "seed": 643024,
+     "success": true
+    },
+    {
+     "seed": 643025,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L3_03",
+   "room": "bathroom",
+   "slot": "L3_03",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Bottle 0, bottle 1 into bin A · brush 2, brush 3 into bin B",
+   "instruction": "Place bottle_0, bottle_1 inside bin_a. Place brush_2, brush_3 inside bin_b. Release all manipulated objects.",
+   "objects": [
+    "bottle_0",
+    "bottle_1",
+    "brush_2",
+    "brush_3",
+    "bin_a",
+    "bin_b"
+   ],
+   "members": [
+    "bottle_0",
+    "bottle_1",
+    "brush_2",
+    "brush_3"
+   ],
+   "keep": [],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l3_5aab0df5f813__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 643031,
+     "success": true
+    },
+    {
+     "seed": 643032,
+     "success": true
+    },
+    {
+     "seed": 643033,
+     "success": true
+    },
+    {
+     "seed": 643034,
+     "success": true
+    },
+    {
+     "seed": 643035,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L3_04",
+   "room": "bathroom",
+   "slot": "L3_04",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Bottle 0 into bin A · brush 2 into bin B",
+   "instruction": "Place bottle_0 inside bin_a. Place brush_2 inside bin_b. Release all manipulated objects.",
+   "objects": [
+    "bottle_0",
+    "brush_2",
+    "bin_a",
+    "bin_b"
+   ],
+   "members": [
+    "bottle_0",
+    "brush_2"
+   ],
+   "keep": [],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l3_f4ffd5a8ea90__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 643041,
+     "success": true
+    },
+    {
+     "seed": 643042,
+     "success": true
+    },
+    {
+     "seed": 643043,
+     "success": true
+    },
+    {
+     "seed": 643044,
+     "success": true
+    },
+    {
+     "seed": 643045,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L3_05",
+   "room": "bathroom",
+   "slot": "L3_05",
+   "level": "L3",
+   "type": "goal_subtask",
+   "title": "Bottle 0 into bin A · brush 2, brush 3 into bin B",
+   "instruction": "Place bottle_0 inside bin_a. Place brush_2, brush_3 inside bin_b. Release all manipulated objects.",
+   "objects": [
+    "bottle_0",
+    "brush_2",
+    "brush_3",
+    "bin_a",
+    "bin_b"
+   ],
+   "members": [
+    "bottle_0",
+    "brush_2",
+    "brush_3"
+   ],
+   "keep": [],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l3_1cee2f041b6b__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 643051,
+     "success": true
+    },
+    {
+     "seed": 643052,
+     "success": true
+    },
+    {
+     "seed": 643053,
+     "success": true
+    },
+    {
+     "seed": 643054,
+     "success": true
+    },
+    {
+     "seed": 643055,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L4_01",
+   "room": "bathroom",
+   "slot": "L4_01",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Bottle 0, bottle 1 into bin A · brush 2, brush 3 into bin B · keep bin A, bin B in place",
+   "instruction": "Place bottle_0, bottle_1 inside bin_a. Place brush_2, brush_3 inside bin_b. Release all manipulated objects. Keep bin_a, bin_b within 5 cm of their initial XY positions.",
+   "objects": [
+    "bottle_0",
+    "bottle_1",
+    "brush_2",
+    "brush_3",
+    "bin_a",
+    "bin_b"
+   ],
+   "members": [
+    "bottle_0",
+    "bottle_1",
+    "brush_2",
+    "brush_3"
+   ],
+   "keep": [
+    "bin_a",
+    "bin_b"
+   ],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l4_f6b3e499c391__v2",
+   "successes": 4,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 644011,
+     "success": true
+    },
+    {
+     "seed": 644012,
+     "success": true
+    },
+    {
+     "seed": 644013,
+     "success": true
+    },
+    {
+     "seed": 644014,
+     "success": false
+    },
+    {
+     "seed": 644015,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L4_02",
+   "room": "bathroom",
+   "slot": "L4_02",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Bottle 0, bottle 1 into bin A · brush 2 into bin B · keep bin A, bin B in place",
+   "instruction": "Place bottle_0, bottle_1 inside bin_a. Place brush_2 inside bin_b. Release all manipulated objects. Keep bin_a, bin_b within 5 cm of their initial XY positions.",
+   "objects": [
+    "bottle_0",
+    "bottle_1",
+    "brush_2",
+    "brush_3",
+    "bin_a",
+    "bin_b"
+   ],
+   "members": [
+    "bottle_0",
+    "bottle_1",
+    "brush_2"
+   ],
+   "keep": [
+    "bin_a",
+    "bin_b"
+   ],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l4_69b9a40ae748__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 644021,
+     "success": true
+    },
+    {
+     "seed": 644022,
+     "success": true
+    },
+    {
+     "seed": 644023,
+     "success": true
+    },
+    {
+     "seed": 644024,
+     "success": true
+    },
+    {
+     "seed": 644025,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L4_03",
+   "room": "bathroom",
+   "slot": "L4_03",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Bottle 0 into bin A · brush 2, brush 3 into bin B · keep bin A, bin B in place",
+   "instruction": "Place bottle_0 inside bin_a. Place brush_2, brush_3 inside bin_b. Release all manipulated objects. Keep bin_a, bin_b within 5 cm of their initial XY positions.",
+   "objects": [
+    "bottle_0",
+    "bottle_1",
+    "brush_2",
+    "brush_3",
+    "bin_a",
+    "bin_b"
+   ],
+   "members": [
+    "bottle_0",
+    "brush_2",
+    "brush_3"
+   ],
+   "keep": [
+    "bin_a",
+    "bin_b"
+   ],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l4_03ddf23a268e__v2",
+   "successes": 5,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 644031,
+     "success": true
+    },
+    {
+     "seed": 644032,
+     "success": true
+    },
+    {
+     "seed": 644033,
+     "success": true
+    },
+    {
+     "seed": 644034,
+     "success": true
+    },
+    {
+     "seed": 644035,
+     "success": true
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L4_04",
+   "room": "bathroom",
+   "slot": "L4_04",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Bottle 0 into bin A · brush 2 into bin B · keep bottle 1 in place",
+   "instruction": "Place bottle_0 inside bin_a. Place brush_2 inside bin_b. Release all manipulated objects. Keep bottle_1 within 5 cm of their initial XY positions.",
+   "objects": [
+    "bottle_0",
+    "bottle_1",
+    "brush_2",
+    "brush_3",
+    "bin_a",
+    "bin_b"
+   ],
+   "members": [
+    "bottle_0",
+    "brush_2"
+   ],
+   "keep": [
+    "bottle_1"
+   ],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l4_1322cac53a8c__v2",
+   "successes": 0,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 644041,
+     "success": false
+    },
+    {
+     "seed": 644042,
+     "success": false
+    },
+    {
+     "seed": 644043,
+     "success": false
+    },
+    {
+     "seed": 644044,
+     "success": false
+    },
+    {
+     "seed": 644045,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L4_05",
+   "room": "bathroom",
+   "slot": "L4_05",
+   "level": "L4",
+   "type": "constraint_probe",
+   "title": "Bottle 0 into bin A · brush 2 into bin B · keep brush 3 in place",
+   "instruction": "Place bottle_0 inside bin_a. Place brush_2 inside bin_b. Release all manipulated objects. Keep brush_3 within 5 cm of their initial XY positions.",
+   "objects": [
+    "bottle_0",
+    "bottle_1",
+    "brush_2",
+    "brush_3",
+    "bin_a",
+    "bin_b"
+   ],
+   "members": [
+    "bottle_0",
+    "brush_2"
+   ],
+   "keep": [
+    "brush_3"
+   ],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4__curr_l4_d760b0dac8c9__v2",
+   "successes": 0,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 644051,
+     "success": false
+    },
+    {
+     "seed": 644052,
+     "success": false
+    },
+    {
+     "seed": 644053,
+     "success": false
+    },
+    {
+     "seed": 644054,
+     "success": false
+    },
+    {
+     "seed": 644055,
+     "success": false
+    }
+   ],
+   "revised": false
+  },
+  {
+   "id": "bathroom-L5_01",
+   "room": "bathroom",
+   "slot": "L5_01",
+   "level": "L5",
+   "type": "full_goal",
+   "title": "Stock the vanity for a guest",
+   "instruction": "Stock the vanity for a guest: put the two toiletry bottles into the front caddy, and put the two brushes into the back caddy.",
+   "objects": [
+    "bottle_0",
+    "bottle_1",
+    "brush_2",
+    "brush_3",
+    "bin_a",
+    "bin_b"
+   ],
+   "members": [],
+   "keep": [],
+   "task_name": "l5c3_bathroom_guest_vanity__percassets_v4",
+   "successes": 4,
+   "n": 5,
+   "trials": [
+    {
+     "seed": 645011,
+     "success": true
+    },
+    {
+     "seed": 645012,
+     "success": true
+    },
+    {
+     "seed": 645013,
+     "success": true
+    },
+    {
+     "seed": 645014,
+     "success": false
+    },
+    {
+     "seed": 645015,
+     "success": true
+    }
+   ],
+   "revised": false
+  }
+ ]
+}
